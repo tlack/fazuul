@@ -1,0 +1,4453 @@
+LEVEL3 {}
+
+ If you want to limit access to certain commands
+ within FAZUUL, fill this option in with the name of
+ a key.  Only users with this key will be allowed to
+ perform certain actions within the game.  If you
+ want everyone to have full access to FAZUUL, leave
+ this option blank.
+
+FAZKEY {NORMAL} S 15 Key required to play FAZUUL
+
+
+LEVEL4 {}
+
+
+ This is the ANSI sequence that represents the attribute
+ for text displayed in FAZUUL.
+
+FAZATR {[1;32m} S 15 ANSI attribute for FAZUUL text
+
+
+LEVEL6 {}
+
+
+FAZCANT {...You don't have the ability to do that here.
+} T FAZUUL non-privileged users message
+
+
+FOULID {[0m
+[1;35mHey you!  None of that stuff here.
+
+[32mPlease enter your player ID: } T FAZUUL foul Player-ID prompt
+
+
+GETALS {[0m
+
+[1;32mSince this is your first time entering FAZUUL, you must pick a three
+to nine character Player-ID for yourself.  This is what you will be known as
+throughout the game.
+
+Please enter your Player-ID: } T FAZUUL enter Player-ID prompt
+
+
+BADPID {[0m
+[1;32mSorry, the Player-ID you have chosen is invalid.  Player-IDs must be
+between three and nine characters (letters only).
+} T FAZUUL invalid Player-ID length message
+
+
+NTGOOD {[0m
+[1;32mSorry, someone else has already taken that Player-ID.
+} T FAZUUL duplicate Player-ID message
+
+
+B4PLA2 {[0m
+[1;32mPlease choose another Player-ID: } T FAZUUL next prompt for Player-ID
+
+
+GOODPD {[0m
+[1;32mGood!  You will now be known as "%s" throughout FAZUUL.
+
+Press RETURN to continue: } T FAZUUL good Player-ID screen
+
+
+FAZ26 {[0m[2J
+[1mFAZUUL
+[36mby Tim Stryker
+[33mCopyright (C) 1984, 1986, 1991, 1992 Galacticomm, Inc.
+[32m------------------------------------------------------
+
+Thinking of taking a vacation?
+
+Well, you were, and then something happened.  As a seasoned intergalactic
+traveler, you are accustomed to the occasional hyperspace grid interlock,
+or matter-transmitter hiccup.
+
+But this is something else entirely!  You were just beaming down to FAZUUL,
+playground pleasure planet of the galactic elite, when all of a sudden
+the vortex cannonballed, the goonplasm deflated, and the freplishers skrank
+out.  You are left standing on the tarmac in front of a large, deserted
+alien city.
+
+The welcoming committee is absent.  The vacationland spa hosts and
+hostesses have all mysteriously disappeared.  You have reached FAZUUL,
+all right, but your vacation is over, and your nightmare has just begun.
+
+Press RETURN to continue: } T FAZUUL description
+
+
+FAZ27 {[0;1;32m
+As you gaze around in dismay, you may be wondering "What in the Nine
+Moons of Jupiter is this??".  This is a multi-user online adventure game.
+It is something along the lines of Zork, Deadline, and so on, but with a
+key difference: many people can play at once, and they are all in the
+SAME simulated universe.  The program that generates this universe is
+like an automated dungeon master in "Dungeons and Dragons"... one that
+plays no favorites, makes no mistakes, and has the capacity to track a
+large number of individuals or groups completely independently of one
+another.
+
+FAZUUL was originally a harsh, forbidding world of intense dry heat and
+endless rolling sand dunes.  It had been inhabited, millions of years
+earlier, by a strange alien civilization of which little is known.  The
+aliens all died out long ago of mysterious biological causes, leaving
+their technology behind.
+
+Then humans came along, and, through the miracles of kwish-age
+engineering, FAZUUL was transformed into a beautiful leisure paradise,
+fully equipped with all the essentials of the up-to-date resort planet.
+
+Press RETURN to continue: } T FAZUUL description
+
+
+FAZ28 {[0;1;32m
+Due to a quantum fluctuation of the void, however, the entire tourist
+mass transit system on FAZUUL has been incapacitated.  Vacationers can
+beam in but they can't beam back out!
+
+Or can they?  As a marooned vacationer on this paradise planet, you and
+your fellow marooned vacationers may be able to figure out the alien
+technology lying around, pool your resources and knowledge, and find a
+way to escape.
+
+Or, if you like, you can spend your time playing the various Galactic
+games that have been installed as part of the resort's facilities, such
+as Foon-Ball and Umflungoo.  Or, you may just explore around, talk with
+other players, fight with them, whatever you like!
+
+When you see the ">" prompt, feel free to enter commands to your player
+to move around (North, South, East, or West), pick up objects that you
+see, talk to the other marooned vacationers in your vicinity (with the
+"say" command), and so on.  Your terminal will be your eyes and ears,
+and will take whatever actions you tell it to (within reason) in your
+name.  Type "help" at any time if you need help.
+
+Press RETURN to continue: } T FAZUUL description
+
+
+FAZ47 {[0;1;32m***
+You suddenly feel the touch of a gentle breeze for a moment!
+} T FAZUUL description
+
+
+FAZ49 {[0;1;32m***
+A gentle rumbling sound, like distant thunder, suddenly fills the air
+for a moment!
+} T FAZUUL description
+
+
+FAZ50 {[0;1;32m...
+Help is available on the following subjects:
+
+  FAZUUL      (background info on FAZUUL)
+  talking     (how to talk, shout, etc.)
+  moving      (how to move around)
+  trading     (how to trade things with other players)
+  quitting    (how to exit from FAZUUL)
+  strategy    (a few hints)
+
+To obtain help on any of these subjects, type "help <subject>".
+For example, to learn how to move around, type "help moving".
+} T FAZUUL description
+
+
+FAZ51 {[0;1;32m...
+You have arrived on FAZUUL, a lush pleasure planet discovered years ago
+by a number of shipwrecked space captains.  At the time of its
+discovery, FAZUUL was a harsh, forbidding world of intense dry heat and
+endless rolling sand dunes.  Now, however, through the miracles of
+kwish-age engineering, FAZUUL has been transformed into a beautiful
+leisure paradise, fully equipped with all of the essentials of the
+up-to-date resort planet.
+
+Due to a quantum fluctuation of the void, however, the entire tourist
+mass transit system on FAZUUL has been incapacitated.  Vacationers can
+beam in but they can't beam back out!
+
+Or can they?  As a marooned vacationer on this paradise planet, you and
+your fellow marooned vacationers may be able to figure out the alien
+technology lying around, pool your resources and knowledge, and find a
+way to escape.  Or, if you like, you can spend your time playing the
+various Galactic games that have been installed as part of the resort's
+facilities, such as Foon-Ball and Umflungoo.  Or, you are free to just
+explore around, talk with other players, fight with them, or whatever
+you like!
+
+Type "help strategy" for some strategy hints...
+} T FAZUUL description
+
+
+FAZ53 {[0;1;32m...
+You can talk to other players in your immediate vicinity by typing the
+word "say", followed by whatever it is you want to say to them.  If you
+want your voice to carry further, use "shout" or "yell".  Everyone
+within hearing distance will hear you.
+
+If you want to communicate privately with another player in your
+immediate area, you can type "whisper to <so-and-so>", followed by your
+confidential message -- other players nearby will only know that you
+have whispered something, not what it is you whispered.
+} T FAZUUL description
+
+
+FAZ54 {[0;1;32m...
+You move around by telling FAZUUL the direction in which you want to
+move: north, south, east, or west.  Sometimes, depending on the
+situation, other moves will also make sense.  FAZUUL keeps track of the
+last five places you have visited, and gives you the full description of
+the place only if it is not one of these last five.  You may tell FAZUUL
+to always give you short place-descriptions by typing "brief" (this may
+be undone by typing "nonbrief").
+} T FAZUUL description
+
+
+FAZ55 {[0;1;32m...
+You can trade crackers, goods, services, and information with other
+players any time you like, in any way you like.  Typing "give
+<such-and-such> to <so-and-so>" will cause the item to be transferred to
+the player you specify, assuming that (a) you possessed it in the first
+place, and (b) the specified player is in your immediate area.  The item
+can be either a device you are holding, or a count of crackers (for
+example, "GIVE 5 CRACKERS TO BEELZEBUB").  The terms and conditions of
+any sale are entirely yours to work out with your co-conspirator.
+} T FAZUUL description
+
+
+FAZ56 {[0;1;32m...
+The original inhabitants of FAZUUL all perished thousands of years ago of
+biological causes, leaving behind odd bits and pieces of incredibly
+advanced technology.  The technology takes the form of the various
+objects with strange names that you find lying around here and there.
+Since they are based on advanced alien technology, their various purposes
+may not be apparent to you at first, but by experimenting around with
+them you may find that some of them have amazing properties.
+
+You can also assemble the objects together in various ways to make more
+complex and interesting devices (e.g. "ATTACH THE GWINGUS TO THE
+MONGOO").  These combined devices can then be further combined, and so
+on.  A major portion of the information you will be trading with other
+players relates to which devices combine with which others, what they do
+when combined, how you activate them, the side effects they might have,
+and so on.
+} T FAZUUL description
+
+
+FAZ58 {[0;1;32m...
+To quit FAZUUL, type "exit", or just "x".  Your player will be placed
+into "hypospatial stasis," which means that you will vanish from the
+FAZUUL universe but that your complete status will be saved, awaiting
+your return to the game.  Any objects you are holding go into hypospatial
+stasis with you, so that you can pick up playing again right where you
+left off.
+
+If you are lost in the jungle or something and merely wish to restart
+the game afresh, type "restart" for further information.
+} T FAZUUL description
+
+
+FAZ100 {[0;1;32m...You're standing just outside a wide gate leading north into an exotic alien
+city glittering brightly in the bluish-white sunlight.  To the south, east, and west of
+you, a dense forest obstructs your view.} T FAZUUL description
+
+
+FAZ101 {[0;1;32m...You're standing on the tarmac of a large spaceport, under the glare of a
+bluish-white sun.  To the west you see a large gate leading into an exotic alien city,
+with glittering towers stretching up into the sky.  To the north, south, and east, a
+shimmering bluish force field appears to block your path.  Through the force field, you
+can see the outlines of the lush forest which appears to border the spaceport in every
+direction except west.} T FAZUUL description
+
+
+FAZ102 {[0;1;32m...You're standing just outside a wide gate leading south into a strange alien
+city glittering brightly in the bluish-white sunlight.  To the north, east, and west of
+you, a dense forest obstructs your view.} T FAZUUL description
+
+
+FAZ103 {[0;1;32m...You're standing just outside a wide, ornate gateway leading east into an
+intricate alien city glittering brightly in the bluish-white sunlight.  To the north,
+south, and west of you, a dense forest obstructs your view.} T FAZUUL description
+
+
+FAZ104 {[0;1;32m...You're standing at the edge of a dense jungle.  A tall wall to your north
+blocks your way in that direction, but a narrow footpath hugs the wall as far as you can
+see (which isn't very far) to the east and west.  To the south, you can see pale bluish
+sunlight filtering through the foliage of the dark, unbroken forest.} T FAZUUL description
+
+
+FAZ105 {[0;1;32m...You're standing at the edge of a dense jungle.  A tall wall to your west blocks
+your way in that direction, but a narrow footpath hugs the wall as far as you can see
+(which isn't very far) to the north and south.  To the east, you can see pale bluish
+sunlight filtering through the foliage of the dark, unbroken forest.} T FAZUUL description
+
+
+FAZ106 {[0;1;32m...You're standing at the edge of a dense jungle.  A tall wall to your south
+blocks your way in that direction, but a narrow footpath hugs the wall as far as you can
+see (which isn't very far) to the east and west.  To the north, you can see pale bluish
+sunlight filtering through the foliage of the dark, unbroken forest.} T FAZUUL description
+
+
+FAZ107 {[0;1;32m...You're standing at the edge of a dense jungle.  A tall wall to your east blocks
+your way in that direction, but a narrow footpath hugs the wall as far as you can see
+(which isn't very far) to the north and south.  To the west, you can see pale bluish
+sunlight filtering through the foliage of the dark, unbroken forest.} T FAZUUL description
+
+
+FAZ108 {[0;1;32m...You're standing beside what seems to be the outside southwest corner of a
+large, walled-in area, with the strange, fertile smells of the jungle wafting about your
+nostrils.  The footpath stretches away into the distance to the north and east, but only
+unbroken jungle confronts you on the west and south.} T FAZUUL description
+
+
+FAZ109 {[0;1;32m...You have reached what appears to be the outside southeast corner of a large,
+walled-in area.  The eerie sounds of the primeval jungle surround you to the east and
+south, but the footpath can be seen hugging the walls to the north and west.} T FAZUUL description
+
+
+FAZ110 {[0;1;32m...You're standing beside what seems to be the outside northeast corner of a
+large, walled-in area, with the strange, fertile smells of the jungle wafting about your
+nostrils.  The footpath stretches away into the distance to the south and west, but only
+unbroken jungle confronts you on the east and north.} T FAZUUL description
+
+
+FAZ111 {[0;1;32m...You have reached what appears to be the outside northwest corner of a large,
+walled-in area.  The eerie sounds of the primeval jungle surround you to the west and
+north, but the footpath can be seen hugging the walls to the south and east.} T FAZUUL description
+
+
+FAZ112 {[0;1;32m...The damp, heady fragrance of the jungle makes you dizzy, and you seem to hear
+an eerie, lost voice through the whistling of the wind, saying: "rrreeetuuurn to the
+city, before all is losss-sst... many a novice has ventured faaa-ar into the jungle,
+never to return...".  Dimly through the flickering leaves, you sense the city in the
+distance to the southeast.} T FAZUUL description
+
+
+FAZ113 {[0;1;32m...The damp, heady fragrance of the jungle makes you dizzy, and you seem to hear
+an eerie, lost voice through the whistling of the wind, saying: "rrreeetuuurn to the
+city, before all is losss-sst... many a novice has ventured faaa-ar into the jungle,
+never to return...".  Dimly through the flickering leaves, you sense the city in the
+distance to the east.} T FAZUUL description
+
+
+FAZ114 {[0;1;32m...The damp, heady fragrance of the jungle makes you dizzy, and you seem to hear
+an eerie, lost voice through the whistling of the wind, saying: "rrreeetuuurn to the
+city, before all is losss-sst... many a novice has ventured faaa-ar into the jungle,
+never to return...".  Dimly through the flickering leaves, you sense the city in the
+distance to the northeast.} T FAZUUL description
+
+
+FAZ115 {[0;1;32m...The damp, heady fragrance of the jungle makes you dizzy, and you seem to hear
+an eerie, lost voice through the whistling of the wind, saying: "rrreeetuuurn to the
+city, before all is losss-sst... many a novice has ventured faaa-ar into the jungle,
+never to return...".  Dimly through the flickering leaves, you sense the city in the
+distance to the north.} T FAZUUL description
+
+
+FAZ116 {[0;1;32m...The damp, heady fragrance of the jungle makes you dizzy, and you seem to hear
+an eerie, lost voice through the whistling of the wind, saying: "rrreeetuuurn to the
+city, before all is losss-sst... many a novice has ventured faaa-ar into the jungle,
+never to return...".  Dimly through the flickering leaves, you sense the city in the
+distance to the northwest.} T FAZUUL description
+
+
+FAZ117 {[0;1;32m...The damp, heady fragrance of the jungle makes you dizzy, and you seem to hear
+an eerie, lost voice through the whistling of the wind, saying: "rrreeetuuurn to the
+city, before all is losss-sst... many a novice has ventured faaa-ar into the jungle,
+never to return...".  Dimly through the flickering leaves, you sense the city in the
+distance to the west.} T FAZUUL description
+
+
+FAZ118 {[0;1;32m...The damp, heady fragrance of the jungle makes you dizzy, and you seem to hear
+an eerie, lost voice through the whistling of the wind, saying: "rrreeetuuurn to the
+city, before all is losss-sst... many a novice has ventured faaa-ar into the jungle,
+never to return...".  Dimly through the flickering leaves, you sense the city in the
+distance to the southwest.} T FAZUUL description
+
+
+FAZ119 {[0;1;32m...The damp, heady fragrance of the jungle makes you dizzy, and you seem to hear
+an eerie, lost voice through the whistling of the wind, saying: "rrreeetuuurn to the
+city, before all is losss-sst... many a novice has ventured faaa-ar into the jungle,
+never to return...".  Dimly through the flickering leaves, you sense the city in the
+distance to the south.} T FAZUUL description
+
+
+FAZ120 {[0;1;32m...You're in the middle of a dense tropical forest.  Overhead, the jungle canopy
+filters out all but a few flickering rays of blue sunlight, and the jungle surrounds you
+to the north, south, east, and west as far as the eye can see.} T FAZUUL description
+
+
+FAZ121 {[0;1;32m...You've reached a small hillock in the dense underbrush.  Through a break in the
+foliage, a city appears in the distance to the northeast.} T FAZUUL description
+
+
+FAZ122 {[0;1;32m...You've reached a small hillock in the dense underbrush.  Through a break in the
+foliage, a city appears in the distance to the south.} T FAZUUL description
+
+
+FAZ123 {[0;1;32m...You've reached a small hillock in the dense underbrush.  Through a break in the
+foliage, a city appears in the distance to the north.} T FAZUUL description
+
+
+FAZ124 {[0;1;32m...You've reached a small hillock in the dense underbrush.  Through a break in the
+foliage, a city appears in the distance to the west.} T FAZUUL description
+
+
+FAZ125 {[0;1;32m...You've climbed a sizable hill, hidden in the forest.  Far away to the west,
+through the shimmering leaves, a glittering point of light catches your attention... can
+it be the city?} T FAZUUL description
+
+
+FAZ126 {[0;1;32m...You've climbed to the top of a high mesa whose sides have been worn down over
+the years by weathering action.  Far, far to the west you detect a faint shimmer of
+light shifting position as the hot jungle air swishes around.  It might be just a
+mirage, or it might be... the city!} T FAZUUL description
+
+
+FAZ130 {[0;1;32m...You're standing at the edge of a dense jungle.  A tall wall to your north
+blocks your way in that direction, but a narrow footpath hugs the wall as far as you can
+see (which isn't very far) to the east and west.  To the south, you can see pale bluish
+sunlight filtering through the foliage of the dark, unbroken forest.  You notice some
+strange hieroglyphics carved into the wall just above eye level here.} T FAZUUL description
+
+
+FAZ131 {[0;1;32m...You're standing at the edge of a dense jungle.  A tall wall to your south
+blocks your way in that direction, but a narrow footpath hugs the wall as far as you can
+see (which isn't very far) to the east and west.  To the north, you can see pale bluish
+sunlight filtering through the foliage of the dark, unbroken forest.  You notice a
+metallic plaque of some kind built into the face of the wall just above eye level.} T FAZUUL description
+
+
+FAZ132 {[0;1;32m...You're surrounded by dense green jungle in all directions.  There is a strange
+hulk of metal several feet across lying half-buried in the underbrush here, which
+appears to be the remains of a defunct alien spaceship!} T FAZUUL description
+
+
+FAZ133 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You come upon a
+strange stubby green cylinder, a foot or two in diameter, poking up out of the
+underbrush.} T FAZUUL description
+
+
+FAZ134 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You feel a strange
+chill in the air here.} T FAZUUL description
+
+
+FAZ135 {[0;1;32m...You're surrounded by dense green jungle in all directions.  A shiny hemisphere
+of metal is sitting in the underbrush a few feet away.} T FAZUUL description
+
+
+FAZ136 {[0;1;32m...You're surrounded by dense green jungle in all directions.  A large freenish is
+stationed here in a little clearing, its gold sides gleaming in the sun.} T FAZUUL description
+
+
+FAZ137 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You have come upon
+a strange gray monolith jutting up out of the underbrush at a sharp angle.} T FAZUUL description
+
+
+FAZ138 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You seem to have
+stumbled across a giant mongooosk embedded in the dirt, with its triple sweenars
+undulating slowly in the forest breeze.} T FAZUUL description
+
+
+FAZ139 {[0;1;32m...You're surrounded by dense green jungle in all directions.  Almost hidden
+beneath a layer of leaves and moss there is a rectangular metal platform, several feet
+wide, with a white X inscribed in its center.} T FAZUUL description
+
+
+FAZ140 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You notice a large,
+oddly-shaped rock jutting out of the underbrush a few feet away.} T FAZUUL description
+
+
+FAZ141 {[0;1;32m...You're surrounded by dense green jungle in all directions.  There is a strange
+hulk of metal several feet across lying half-buried in the dirt here, which appears to
+be the remains of a defunct alien spaceship!} T FAZUUL description
+
+
+FAZ142 {[0;1;32m...You're standing in a small clearing in the jungle.  The rain has lightened up a
+little, and has settled down to a steady drizzle.  There, at the exact geometric center
+of the clearing, is a giant oddlewokkus!} T FAZUUL description
+
+
+FAZ145 {[0;1;32m...You have entered a sheltered little nook of the forest, where the rain does not
+seem to get through.  The singing of the insects and the whistling of the wind seems
+more relaxing here somehow.  You notice something glittering out of the corner of your
+eye, which upon investigation turns out to be a blub, hanging suspended in space a foot
+or so off the ground.} T FAZUUL description
+
+
+FAZ146 {[0;1;32m...The rain has stopped.  You're standing in a strangely bare section of the
+forest, and you feel an odd sense of foreboding here, for directly at the center of the
+bare area is a huge glowing nofzinger!} T FAZUUL description
+
+
+FAZ147 {[0;1;32m...You're surrounded by dense green jungle in all directions.  Sitting right out
+in plain sight is a large statue of an alien, in repose.} T FAZUUL description
+
+
+FAZ148 {[0;1;32m...You're surrounded by dense green jungle in all directions.  Before you is a
+large statue of an alien!} T FAZUUL description
+
+
+FAZ149 {[0;1;32m...You're surrounded by dense green jungle in all directions.  A large statue of
+an alien sitting in what appears to be a contemplative mood stands before you.} T FAZUUL description
+
+
+FAZ150 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You have come upon
+a large statue of an alien sitting half-covered by the foliage.} T FAZUUL description
+
+
+FAZ151 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You have come upon
+a strange gray monolith covered with vines, jutting up out of the earth at a sharp
+angle.} T FAZUUL description
+
+
+FAZ152 {[0;1;32m...You're surrounded by dense green jungle in all directions.  A short distance
+away you see a large, pale white orb standing on a dark square pedestal, with a number
+of tangled vines growing about its base.} T FAZUUL description
+
+
+FAZ153 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You have come upon
+a strange gray monolith covered with vines, jutting up out of the earth at a sharp
+angle.} T FAZUUL description
+
+
+FAZ154 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You have come upon
+a strange gray monolith covered with vines, jutting up out of the earth at a sharp
+angle.} T FAZUUL description
+
+
+FAZ155 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You have come upon
+a strange gray monolith covered with vines, jutting up out of the earth at a sharp
+angle.} T FAZUUL description
+
+
+FAZ156 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You have come upon
+a strange gray monolith covered with vines, jutting up out of the earth at a sharp
+angle.} T FAZUUL description
+
+
+FAZ157 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You have come upon
+a strange gray monolith covered with vines, jutting up out of the earth.} T FAZUUL description
+
+
+FAZ158 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You have come upon
+a strange gray monolith covered with vines, jutting up out of the earth at a sharp
+angle.} T FAZUUL description
+
+
+FAZ159 {[0;1;32m...You're surrounded by dense green jungle in all directions.  You have come upon
+a strange gray monolith covered with vines, jutting up out of the earth at a sharp
+angle.} T FAZUUL description
+
+
+FAZ160 {[0;1;32m...You're in the midst of a massive thunderstorm!  The wind whips the rain into
+your eyes, making it difficult to see more than ten feet in any direction.} T FAZUUL description
+
+
+FAZ161 {[0;1;32m ...You're surrounded by dense green jungle in all directions.  To the west, the
+clouds seem very dark, and you can hear the sound of rain hitting the treetops, although
+it is dry where you are.} T FAZUUL description
+
+
+FAZ162 {[0;1;32m ...You're surrounded by dense green jungle in all directions.  To the north, the
+clouds seem very dark, and you can hear the sound of rain hitting the treetops, although
+it is dry where you are.} T FAZUUL description
+
+
+FAZ163 {[0;1;32m ...You're surrounded by dense green jungle in all directions.  To the south, the
+clouds seem very dark, and you can hear the sound of rain hitting the treetops, although
+it is dry where you are.} T FAZUUL description
+
+
+FAZ285 {[0;1;32m...You're standing in what appears to be a reception area, with a large desk
+stretching almost all the way across the room.  The desk appears to have some writing on
+it.  To the south is a gate leading to the jungle.  Faintly luminescent portals lead to
+the north and east.} T FAZUUL description
+
+
+FAZ286 {[0;1;32m...You're standing on a broad outdoor walkway running east and west, with tall
+crystalline towers rising up on either side.  To the east is a gate leading to the
+spaceport.  Further on down the walkway to the west is a giant glowing sphere on a
+pedestal, and to the south is an open portal leading into the base of one of the
+crystalline towers.} T FAZUUL description
+
+
+FAZ287 {[0;1;32m...You're standing on a broad covered walkway running north and south between the
+gate to the jungle to the north and a strange small building to the south.  The words
+"OSMOTIC AVAILABLE" appear to be floating in space just above the entrance to the
+building.  Also, there is a crooked little pathway leading off to the west.} T FAZUUL description
+
+
+FAZ288 {[0;1;32m...You're standing in what seems to have once been a reception area of some sort,
+with a large, wide desk in the middle of the room.  To the west is the west gate of the
+city, and portals from the room lead away to the east and south.} T FAZUUL description
+
+
+FAZ289 {[0;1;32m...You're in a strange room where the walls scintillate in blue and green, as
+though they were made of millions of little lights.  Portals lead to the west and
+north.} T FAZUUL description
+
+
+FAZ290 {[0;1;32m...You're standing in a short corridor running north and south.  There is an odd
+hexagonal slot in the west wall with signs of wear around its edges.} T FAZUUL description
+
+
+FAZ291 {[0;1;32m...You're in the Hall of Umflungoo, an auditorium-sized room with Umflungoo
+banners hanging from the rafters.  There is a large circular hole in the middle of the
+floor; portals lead out of the hall to the north and south.  A small panel attached to
+the wall near the north portal appears to have some writing on it.} T FAZUUL description
+
+
+FAZ292 {[0;1;32m...You're in a wide hallway making a dogleg to the west while running north and
+south.  There seems to be a lot of dirt on the floor here, as though it were being
+tracked in from somewhere.  Faintly luminescent portals appear to lead to the north,
+south, and west.} T FAZUUL description
+
+
+FAZ293 {[0;1;32m...You're standing in a small cubicle with a very dirty floor.  You can feel the
+floor vibrate as you stand here.  Oval-shaped portals lead to the east and north.} T FAZUUL description
+
+
+FAZ294 {[0;1;32m...You have entered a large circular chamber with exits leading in all directions.
+On the wall is a faded diagram of some kind... it looks at first glance as though it
+might be a map.} T FAZUUL description
+
+
+FAZ295 {[0;1;32m...You're walking down a long hall with portals leading to the north, south, and
+east.  All along the hall are some sort of transparent display cases with weird
+substances inside them.  There seems to be a lot of dirt on the floor here, as though it
+were being tracked in from someplace nearby.} T FAZUUL description
+
+
+FAZ296 {[0;1;32m...You're standing beside a giant glowing sphere set in the middle of a walkway.
+To the north is a small gate leading to a little courtyard, and to the west is an
+entryway leading into a large circular building with sparkling metallic blue walls.  The
+walkway you are standing on stretches off to a gate in the distance to the east.} T FAZUUL description
+
+
+FAZ297 {[0;1;32m...You're standing in a small courtyard with exotic towers rising to the sky all
+around you.  One pathway leads to a gate to the south, and another leads to an entrance
+in one of the towers to the west.} T FAZUUL description
+
+
+FAZ298 {[0;1;32m...You have entered the Foon-Ball Emporium.  Overhead you can see the usual
+holographically-shaded regions of pleebor, fong, oomwazzitz, and so on, in the standard
+figure-eight pattern.  A set of instructions appears on the wall, just above a slot
+about the size of a gwingus.  Portals lead from the Emporium in all directions.} T FAZUUL description
+
+
+FAZ299 {[0;1;32m...You're inside the strange little building, which only appears to have one room.
+Sniffing the air, you smell ozone quite strongly, but the smell does not seem to come
+from anywhere in particular.  A large osmotic is hovering in the center of the room!
+The only exit seems to be to the north.} T FAZUUL description
+
+
+FAZ300 {[0;1;32m...You're walking down a glowing pathway through what was at one time apparently a
+garden of some kind.  To the south there is a large iridescent building with an entrance
+at its base.  To the east, the pathway opens out onto a broad covered walkway running
+north and south.  To the west is a cluster of small dome-shaped structures, and to the
+north is a tall narrow building, all black, topped by a giant silver disk.} T FAZUUL description
+
+
+FAZ301 {[0;1;32m...You're standing in a large square chamber with both walls and floor completely
+jet black.  Looking up, you cannot see the ceiling.  Brightly glowing portals lead west
+and south.} T FAZUUL description
+
+
+FAZ302 {[0;1;32m...You're inside a strange little dome-shaped structure.  The inside surface of
+the dome is covered with millions of tiny lights that seem to blink on and off in many
+different colors, at random.  There is a strange discolored area on the floor, with the
+beginnings of a lip forming around it.  Portals lead to the east and north.} T FAZUUL description
+
+
+FAZ303 {[0;1;32m...You're standing in the middle of a large hall filled with little gusts of wind.
+As the gusts whistle around you, they almost sound like voices at the edge of hearing.
+A large dark portal leads away to the east, and another smaller one leads south.} T FAZUUL description
+
+
+FAZ304 {[0;1;32m...You have entered a low short corridor.  At the west end, a sort of shimmering
+curtain seems to form, through which you can barely see the outlines of a room beyond.
+To the east, the corridor opens out into a larger room.} T FAZUUL description
+
+
+FAZ305 {[0;1;32m...You're standing in a large room with a clean-swept floor.  A strange smell
+fills the air, as though some solvent has been used here recently in cleaning up.
+Portals lead to the west and south, and to the east is a large rectangular opening in
+the wall.} T FAZUUL description
+
+
+FAZ306 {[0;1;32m...You find yourself in a low circular chamber with a strange sort of wheel-shaped
+object on a pedestal in the middle.  Faintly luminescent portals lead to the north and
+east.} T FAZUUL description
+
+
+FAZ307 {[0;1;32m...You're standing in a strange rectangular chamber with chromed metallic walls.
+In the middle of the room sits a giant grinfrazzitz!  Rectangular openings in the walls
+lead west and south.} T FAZUUL description
+
+
+FAZ308 {[0;1;32m...You're in a room filled with tables of an odd design, as though this might have
+been a gathering place for the aliens at one time.  Portals lead away to the east and
+west, and to the north there is a large rectangular opening in the wall.} T FAZUUL description
+
+
+FAZ309 {[0;1;32m...You're in a long curved corridor with exits to the west and south.  Strange
+staccato sounds appear to be coming from the southern end of the corridor.} T FAZUUL description
+
+
+FAZ310 {[0;1;32m...You're surrounded by sparks!  Great flashes of light shoot out of the walls all
+around you, singeing the ends of your hair and half blinding you!  Dimly through the
+sparks you sense an exit to the east.} T FAZUUL description
+
+
+FAZ311 {[0;1;32m...You're surrounded by sparks!  Great flashes of light shoot out of the walls all
+around you, singeing the ends of your hair and half blinding you!  Dimly through the
+sparks you sense exits to the east, west, and north.} T FAZUUL description
+
+
+FAZ312 {[0;1;32m...You're surrounded by sparks!  Great flashes of light shoot out of the walls all
+around you, singeing the ends of your hair and half blinding you!  Dimly through the
+sparks you sense an exit to the west.} T FAZUUL description
+
+
+FAZ313 {[0;1;32m...You're standing on a luminescent platform pulsing slowly in a beautiful gold
+color.  Brilliant blue force fields appear to bar your way except to the east, where you
+can see a softly carpeted area beckoning.} T FAZUUL description
+
+
+FAZ314 {[0;1;32m...You're standing ankle-deep in the carpet.  Soft, ethereal music drifts through
+the air to your ears.  A ramp leads up through a small portal to the east, and a
+passageway appears to lead south as well.  To the west is the golden glowing platform.} T FAZUUL description
+
+
+FAZ315 {[0;1;32m...You're standing in some sort of observation chamber looking out into a star
+field of unparalleled beauty.  Galactic communication is taking place before your very
+eyes!  A ramp leads downward to your west.} T FAZUUL description
+
+
+FAZ316 {[0;1;32m...You're standing in front of the entrance to a brightly lit room.  A red sign
+over the doorway blinks at you: METASTATIC CONTROL CHAMBER, AUTHORIZED PERSONNEL ONLY.
+The doorway leads south.  Another doorway leads east to a room filled with machinery,
+and the passageway to the north leads back to the softly carpeted area.} T FAZUUL description
+
+
+FAZ317 {[0;1;32m...You're in a large room packed full of strange and intricate machinery.  A long
+tube seems to run the length of the room from south to north, terminating on the north
+end in a wall, and on the south end opening out into a bare chrome-walled cubicle.  It
+appears possible to crawl out of the machinery to either the west or the south.} T FAZUUL description
+
+
+FAZ319 {[0;1;32m...You're in the metastatic transfer chamber, a small bare cubicle with smooth chrome floor, walls,
+and ceiling.  To the north is a mass of machinery with a narrow crawl-space leading deep
+into it, and to the west is the metastatic control chamber.} T FAZUUL description
+
+
+FAZ320 {[0;1;32m...You're in a small room with portals leading east and south.  There is a hopper
+here with a thick hose leading out the bottom of it into the wall.} T FAZUUL description
+
+
+FAZ321 {[0;1;32m...You're standing in a gold-walled chamber in front of a console of some sort
+with two lights on it and a single pushbutton marked "S".  Both of the lights are off.
+Faintly glowing portals lead west and south.} T FAZUUL description
+
+
+FAZ322 {[0;1;32m...You're in a small bare room with what appears to be a set of five buttons on
+the wall: one red, one blue, one yellow, one purple, and one green.  Portals lead to the
+west and north.} T FAZUUL description
+
+
+FAZ323 {[0;1;32m...You're in a long chamber with five colored globes up near the ceiling.  Sparks
+fly between the globes from time to time.  Portals lead east, west, and north.} T FAZUUL description
+
+
+FAZ324 {[0;1;32m...You're standing in front of a metallic gold desk at the entrance to what is
+apparently a laboratory of some sort.  Strange electrical discharges light up the room
+to your east from time to time.  A long corridor stretches away to your north.} T FAZUUL description
+
+
+FAZ325 {[0;1;32m...You're walking down a long north-south corridor.  In the distance to the south
+you can see a glimmer of light reflecting off of something metallic.} T FAZUUL description
+
+
+FAZ326 {[0;1;32m...You're walking down a long corridor leading north and south.} T FAZUUL description
+
+
+FAZ327 {[0;1;32m...You're walking down a long corridor leading north and south.} T FAZUUL description
+
+
+FAZ328 {[0;1;32m...You're walking down a long corridor leading north and south.  In the distance
+to the north you can make out a gyrating light pattern of some kind.} T FAZUUL description
+
+
+FAZ329 {[0;1;32m...You're standing in a sort of foyer.  A wildly gyrating pattern of light in the
+middle of the floor makes it hard to concentrate.  Portals lead to the north and east,
+and a corridor stretches away to the south.} T FAZUUL description
+
+
+FAZ330 {[0;1;32m...You're in a large room vaguely resembling a lobby, with portals leading off to
+the north and west.  In the east wall there is a peculiar hexagonal slot, with signs of
+wear around its edges.} T FAZUUL description
+
+
+FAZ331 {[0;1;32m...You're standing in a small carpeted room with portals leading to the east and
+south.  Almost half the space in the room is taken up by a large granfalloon, which sits
+there humming expectantly.} T FAZUUL description
+
+
+FAZ332 {[0;1;32m...You have entered a large hall filled with benches facing north.  The north wall
+of the hall seems to be covered with a sort of thin mist.  There is a smell of incense
+in the air.  Portals lead east, west, and south from here.} T FAZUUL description
+
+
+FAZ333 {[0;1;32m...You're standing in a small side-chamber of the large hall.  On the north wall
+of the chamber is a giant ribbenfratz.  The only exit appears to be the portal you came
+in through, to the west.} T FAZUUL description
+
+
+FAZ334 {[0;1;32m...You're weightless, floating in a space that takes no space, with a greyish-blue
+mist all around you, stretching to infinity in every direction.  A faint susurrus of
+sound surrounds you, seeming to draw energy from you, making your whole body glow with a
+kind of creative energy.  You feel a strange sense of power coursing through you, as
+though you have the power here to create anything, anything at all.} T FAZUUL description
+
+
+FAZ335 {[0;1;32m...You're in a low-slung east-west passageway that terminates in a blank wall to
+the west.  The floor here is encrusted with dirt.} T FAZUUL description
+
+
+FAZ336 {[0;1;32m...You have entered a vast dark hall with a hard stone floor.  It is so dark that you
+cannot see any of the exits.  There appears to be a switch of some sort on the wall
+nearby.} T FAZUUL description
+
+
+FAZ337 {[0;1;32m...You are in a small dirt-floored room filled with weird translucent floating
+globules.  The globules seem to be attracted to you, and they begin to cluster around
+you.  Dimly glowing portals lead north and west.} T FAZUUL description
+
+
+FAZ338 {[0;1;32m...You're in a small chamber brightly lit by a strange light source in the
+ceiling.  The light is of a type you've never seen before, an odd, indefinable color.
+Portals stand open to the west and south.} T FAZUUL description
+
+
+FAZ339 {[0;1;32m...You're in a short passageway leading north and south, with a branch to the east
+in the middle.} T FAZUUL description
+
+
+FAZ340 {[0;1;32m...You're in a long north-south passageway with a dirt floor.  To the north the
+passageway appears to open out into a brightly lit area, but to the south the passageway
+ends in a featureless wall.} T FAZUUL description
+
+
+FAZ341 {[0;1;32m...You're standing on a wide observation deck overlooking an area containing giant
+coils of some crystalline material.  A doorway leads from the deck to the north, and a
+low passageway leads off to the south.  A short ramp leads east from the deck to the
+area with the coils.} T FAZUUL description
+
+
+FAZ342 {[0;1;32m...You're standing beside a series of giant coils made of some bizarre crystalline
+material.  To the west is a sort of observation deck, and portals also lead away to the
+north and east.} T FAZUUL description
+
+
+FAZ343 {[0;1;32m...You're standing in a room with a large hopper built into the floor.  Faintly
+luminescent portals lead to the north, south, and west.} T FAZUUL description
+
+
+FAZ344 {[0;1;32m...You're in a large room with several pieces of furniture closely resembling
+desks, as though this had been an alien office of some kind.  Portals lead away to the
+west, south, and north.} T FAZUUL description
+
+
+FAZ345 {[0;1;32m...You're in a small control room of some sort containing a number of odd-looking
+instruments.  The only instrument even remotely recognizable is a small console with a
+light on it and a switch with the word START scratched into the metal beside it.  The
+light does not appear to be lit.  Portals lead to the north, south, and east.} T FAZUUL description
+
+
+FAZ346 {[0;1;32m...You're in a long hallway running east and west with a portal to the south at
+the west end, and a portal to the east at the east end.} T FAZUUL description
+
+
+FAZ347 {[0;1;32m...You're standing in a small room with portals leading from it in all directions.
+A strange pattern of sparkling colors spins and dances about on the ceiling overhead.} T FAZUUL description
+
+
+FAZ348 {[0;1;32m...You're walking along an east-west hallway with doorways leading to the north
+and south spaced along it.  The hallway terminates in a blank wall to the east, but a
+portal to the west here appears to be open.} T FAZUUL description
+
+
+FAZ349 {[0;1;32m...You're in a small room with what appears to be a metal box set into one wall.
+A misty sort of substance seems to pour into the room from the portal to the west, but
+the mist dissipates as it enters.  A second portal leads south.} T FAZUUL description
+
+
+FAZ350 {[0;1;32m...You're standing in the midst of a sparkling white mist so thick that you cannot
+see the walls of the room.} T FAZUUL description
+
+
+FAZ351 {[0;1;32m...You find yourself in a weird little egg-shaped chamber whose walls seem to
+pulsate in various shades of purple.  At about waist level there is a slot in the wall
+about the size of your fist.  The one portal to the chamber leads south.} T FAZUUL description
+
+
+FAZ352 {[0;1;32m...If this message appears, it is bug number 352!  Please notify the System
+Operator immediately!} T FAZUUL description
+
+
+FAZ400 {[0;1;32m...You're standing in a short corridor running north and south.  There is an open
+portal in the west wall leading to an odd little egg-shaped chamber.} T FAZUUL description
+
+
+FAZ401 {[0;1;32m...You're in a large room vaguely resembling a lobby, with portals leading off to
+the north and west.  In the east wall there is an open portal to an odd little
+egg-shaped chamber.} T FAZUUL description
+
+
+FAZ402 {[0;1;32m...You're in a long hallway running east and west with portals to the north and
+south at the west end, and a portal to the east at the east end.} T FAZUUL description
+
+
+FAZ405 {[0;1;32m...You find yourself in a weird little egg-shaped chamber whose walls seem to
+pulsate in various shades of purple.  At about waist level there is a slot in the wall
+about the size of your fist.  The one portal to the chamber leads east.} T FAZUUL description
+
+
+FAZ406 {[0;1;32m...You find yourself in a weird little egg-shaped chamber whose walls seem to
+pulsate in various shades of purple.  At about waist level there is a slot in the wall
+about the size of your fist.  The one portal to the chamber leads west.} T FAZUUL description
+
+
+FAZ410 {[0;1;32m...You're standing in a strange rectangular chamber with solid chromed metallic
+walls on all sides.  In the middle of the room sits a giant grinfrazzitz!} T FAZUUL description
+
+
+FAZ411 {[0;1;32m...You're standing in a large room with a clean-swept floor.  A strange smell
+fills the air, as though some solvent has been used here recently in cleaning
+up.  A great heavy panel lies against the wall to the east, and portals lead
+to the west and south.} T FAZUUL description
+
+
+FAZ412 {[0;1;32m...You're in a room filled with tables of an odd design, as though this might have
+been a gathering place for the aliens at one time.  A great heavy panel lies against the
+wall to the north, and portals lead away to the east and west.} T FAZUUL description
+
+
+FAZ415 {[0;1;32m...You're standing in a gold-walled chamber in front of a console of some sort
+with two lights on it and a single pushbutton marked "S".  Both of the lights are
+flashing madly, and a loud high-pitched beeping sound is coming from the console.
+Faintly glowing portals lead west and south.} T FAZUUL description
+
+
+FAZ416 {[0;1;32m...You're in a small room with portals leading east and south.  There is a hopper
+here with a thick hose leading out the bottom of it into the wall.  A beeping noise is
+coming from the room to your east.} T FAZUUL description
+
+
+FAZ417 {[0;1;32m...You're in a small bare room with what appears to be a set of five buttons on
+the wall: one red, one blue, one yellow, one purple, and one green.  A beeping noise is
+coming from the room to your north.  Portals lead west and north.} T FAZUUL description
+
+
+FAZ420 {[0;1;32m...You're standing in a gold-walled chamber in front of a console of some sort
+with two lights on it and a single pushbutton marked "S".  The light to the left is
+glowing steadily, but the one to the right is off.  Faintly glowing portals lead west
+and south.} T FAZUUL description
+
+
+FAZ421 {[0;1;32m...You're standing in a gold-walled chamber in front of a console of some sort
+with two lights on it and a single pushbutton marked "S".  The light to the right is
+glowing steadily, but the one to the left is off.  Faintly glowing portals lead west and
+south.} T FAZUUL description
+
+
+FAZ422 {[0;1;32m...You're standing in a gold-walled chamber in front of a console of some sort
+with two lights on it and a single pushbutton marked "S".  Both of the lights are
+glowing steadily, and the air around the console seems charged with energy...  Faintly
+glowing portals lead west and south.} T FAZUUL description
+
+
+FAZ425 {[0;1;32m...You're in a long chamber with a blue globe extending down from the ceiling on a
+long crystalline rod.  The globe appears to be swirling with some sort of strange gas.
+Four other globes of various colors remain up near the ceiling, with sparks flying
+between them from time to time.  Portals lead east, west, and north.} T FAZUUL description
+
+
+FAZ426 {[0;1;32m...You're in a long chamber with a blue globe and a green globe extending down
+from the ceiling on long crystalline rods.  The globes appear to be swirling with some
+sort of strange gas.  Three other globes of various colors remain up near the ceiling,
+with sparks flying between them from time to time.  Portals lead east, west, and north.} T FAZUUL description
+
+
+FAZ427 {[0;1;32m...You're in a long chamber with three globes extending down from the ceiling on
+long crystalline rods, one blue, one green, and one purple.  The globes appear to be
+swirling with some sort of strange gas.  A red globe and a yellow globe remain up near
+the ceiling, with with sparks flying between them from time to time.  Portals lead east,
+west, and north.} T FAZUUL description
+
+
+FAZ428 {[0;1;32m...You're in a long chamber with four globes of various colors extending down from
+the ceiling on long crystalline rods.  The globes appear to be swirling with some sort
+of strange gas.  A yellow globe remains up near the ceiling.  Portals lead east, west,
+and north.} T FAZUUL description
+
+
+FAZ429 {[0;1;32m...You're in a long chamber with a five globes of various colors extending down
+from the ceiling on long crystalline rods.  The globes make a whooshing sound as the gas
+in them swirls violently.  Portals lead east, west, and north.} T FAZUUL description
+
+
+FAZ435 {[0;1;32m...You are in a vast hall with a hard stone floor.  Filling the center of the room
+is a huge, intricate machine of some sort, with a pale orange corona surrounding it.  A
+chute, leading into the machine, is off to one side.  Portals lead away to the north, east,
+and west.} T FAZUUL description
+
+
+FAZ437 {[0;1;32m...You're inside a strange little dome-shaped structure.  The inside surface of
+the dome is covered with millions of tiny lights, many of which are glowing green, while
+the rest change color at random.  Portals lead to the east and north.} T FAZUUL description
+
+
+FAZ438 {[0;1;32m...You're inside a strange little dome-shaped structure.  The inside surface of
+the dome is covered with millions of tiny lights, all of which are now glowing green!
+Portals lead to the east and north.} T FAZUUL description
+
+
+FAZ440 {[0;1;32m...You're standing beside a series of giant coils made of some bizarre crystalline
+material.  The coils are glowing brightly and making a deep, powerful humming sound.  To
+the west is a sort of observation deck, and portals also lead away to the north and
+east.} T FAZUUL description
+
+
+FAZ441 {[0;1;32m...You're standing in a room with a large hopper built into the floor.  Faintly
+luminescent portals lead to the north, south, and west.  A deep, powerful humming sound
+is coming from the portal to the west.} T FAZUUL description
+
+
+FAZ442 {[0;1;32m...You're standing on a wide observation deck overlooking an area containing giant
+coils of some crystalline material.  The coils appear to be glowing and putting out a
+deep, powerful humming sound.  A doorway leads from the deck to the north, and a low
+passageway leads off to the south.  A short ramp leads east from the deck to the area
+with the coils.} T FAZUUL description
+
+
+FAZ443 {[0;1;32m...You're in a small control room of some sort containing a number of odd-looking
+instruments.  The only instrument even remotely recognizable is a small console with a
+light on it and a switch with the word START scratched into the metal beside it.  The
+light does not appear to be lit.  A deep, powerful humming sound is coming through the
+portal to the south.  Other portals lead east and north.} T FAZUUL description
+
+
+FAZ444 {[0;1;32m...You're in a small control room of some sort containing a number of odd-looking
+instruments.  The only instrument even remotely recognizable is a small console with a
+light on it and a switch with the word START scratched into the metal beside it.  The
+light is lit, glowing steadily with a pale blue color.  A deep, powerful humming sound
+is coming through the portal to the south.  Other portals lead east and north.} T FAZUUL description
+
+
+FAZ445 {[0;1;32m...You're in a small control room of some sort containing a number of odd-looking
+instruments.  The only instrument even remotely recognizable is a small console with a
+light on it and a switch with the word START scratched into the metal beside it.  The
+light is blinking on and off madly in a green color.  The very air here seems to be
+charged with energy, and a great, vibrant humming sound is coming from the portal to the
+south.  Other portals lead east and north.} T FAZUUL description
+
+
+FAZ450 {[0;1;32m...You're in a wide hallway making a dogleg to the west while running north and
+south.  There seems to be a lot of dirt on the floor here, as though it were being
+tracked in from somewhere.  Faintly luminescent portals appear to lead to the north and
+south.} T FAZUUL description
+
+
+FAZ451 {[0;1;32m...You're walking down a long hall with portals leading to the north and east.
+All along the hall are some sort of transparent display cases with weird substances
+inside them.  There seems to be a lot of dirt on the floor here, as though it were being
+tracked in from someplace nearby.} T FAZUUL description
+
+
+FAZ452 {[0;1;32m...You're in a low-slung east-west passageway with portals at the east and west
+ends.  The floor here is encrusted with dirt.} T FAZUUL description
+
+
+FAZ453 {[0;1;32m...You're in a long north-south passageway with a dirt floor.  To the north the
+passageway appears to open out into a brightly lit area, and a faintly luminescent
+portal leads south.} T FAZUUL description
+
+
+FAZ455 {[0;1;32m...You're inside the strange little building.  An almost overpowering smell of
+ozone fills the air, and there is a large osmotic hovering in the center of the room.  A
+large rectangular opening in the east wall leads to a short corridor, and a portal in
+the north wall leads outside.} T FAZUUL description
+
+
+FAZ456 {[0;1;32m...You have entered a low short corridor running east and west.  You catch a whiff
+of ozone from time to time here.} T FAZUUL description
+
+
+FAZ460 {[0;1;32m...The fluid has a mildly tart flavor, and as it slides down your throat it
+seems to feel as though it is penetrating throughout your body in the process.
+You feel a slight sense of lightheadedness, but this quickly passes.
+} T FAZUUL description
+
+
+FAZ461 {[0;1;32m***
+You hear a sudden gurgling sound!
+***
+A pale blue fluid has just started gushing out of one of the tubes on
+the freenish!
+} T FAZUUL description
+
+
+FAZ462 {[0;1;32m***
+The flow of pale blue fluid out of the freenish has just stopped all of
+a sudden!
+} T FAZUUL description
+
+
+FAZ465 {[0;1;32m
+...Your field of view is suddenly filled with a vision of a spaceport
+city... huge starships appear lined up in berths extending far into the
+distance to the east, and the air is filled with flying craft of every
+possible sort and description.  All at once a small craft approaches you
+at a steep angle and lands next to you on the platform.  The side of the
+craft abruptly parts, and a five-tentacled alien climbs out and
+undulates away toward the city.  Looking inside the ship for the
+controls, you notice that it seems to have none, but there is a set of
+tables inscribed into one wall.  You notice that the tables seem to
+consist of numbers, inscribed in groups of four, three groups per line
+in each case followed by some cryptic cuneiform writing.  As you lean
+forward to examine the tables more closely, you feel yourself losing
+your balance, and falling... falling... falling... and then the vision
+has passed and you find that you have fallen off the platform.
+} T FAZUUL description
+
+
+FAZ470 {[0;1;32m***
+You suddenly hear a low, ponderous voice issuing from the statue:
+
+     Three of one and two of three
+     For those who would know fame
+     Coordinates be known to thee
+     Both they are the same.
+
+} T FAZUUL description
+
+
+FAZ471 {[0;1;32m***
+Suddenly a low, droning noise starts up and soon you are able to
+make sense of it... a chanting voice is coming from the statue:
+
+     Two of three and one of two
+     Made the ancients run
+     Abercrombie, Fitch, and You:
+     Differenced, they are one.
+
+} T FAZUUL description
+
+
+FAZ472 {[0;1;32m***
+The statue beside you suddenly starts making a low grinding noise!
+Then, in a low but almost hesitant tone, as though after centuries
+of silence, a voice from the statue says:
+
+     One of two and three of one
+     Form a golden tree...
+     Harken to the Oddlewokkus:
+     Added, they are three.
+
+} T FAZUUL description
+
+
+FAZ473 {[0;1;32m***
+You hear a booming low voice suddenly issuing from the statue:
+
+     Two the same and one is different
+     Known, is almost done.
+     Digitally, digitalis
+     Lower one is one.
+
+} T FAZUUL description
+
+
+FAZ700 {[0;1;32m***
+The portal in the west wall suddenly shrinks to a narrow slit, and then
+vanishes!  An odd hexagonal slot suddenly appears in its place.
+} T FAZUUL description
+
+
+FAZ701 {[0;1;32m***
+The portal in the east wall suddenly shrinks to a narrow slit, and then
+vanishes!  An odd hexagonal slot suddenly appears in its place.
+} T FAZUUL description
+
+
+FAZ702 {[0;1;32m***
+The portal in the north wall suddenly shrinks to a narrow slit, and then
+vanishes!  An odd hexagonal slot suddenly appears in its place.
+} T FAZUUL description
+
+
+FAZ705 {[0;1;32m***
+The odd little hexagonal slot in the west wall suddenly vanishes, and
+a long tall slit appears, which rapidly widens out into a portal!
+} T FAZUUL description
+
+
+FAZ706 {[0;1;32m***
+The odd little hexagonal slot in the east wall suddenly vanishes, and
+a long tall slit appears, which rapidly widens out into a portal!
+} T FAZUUL description
+
+
+FAZ707 {[0;1;32m***
+The odd little hexagonal slot in the north wall suddenly vanishes, and
+a long tall slit appears, which rapidly widens out into a portal!
+} T FAZUUL description
+
+
+FAZ710 {[0;1;32m***
+The portal in the east wall suddenly shrinks to a point and vanishes!
+} T FAZUUL description
+
+
+FAZ711 {[0;1;32m***
+The portal in the west wall suddenly shrinks to a point and vanishes!
+} T FAZUUL description
+
+
+FAZ712 {[0;1;32m***
+The portal in the south wall suddenly shrinks to a point and vanishes!
+} T FAZUUL description
+
+
+FAZ715 {[0;1;32m***
+The east wall suddenly flashes bright white, and a portal appears in
+the middle of it!
+} T FAZUUL description
+
+
+FAZ716 {[0;1;32m***
+The west wall suddenly flashes bright white, and a portal appears in
+the middle of it!
+} T FAZUUL description
+
+
+FAZ717 {[0;1;32m***
+The south wall suddenly flashes bright white, and a portal appears in
+the middle of it!
+} T FAZUUL description
+
+
+FAZ719 {[0;1;32m...You feel it begin to get caught in a clamping mechanism!
+(You pulled it back out immediately, by reflex!)
+} T FAZUUL description
+
+
+FAZ720 {[0;1;32m...A few of the little lights on the dome surface are changing to green!
+} T FAZUUL description
+
+
+FAZ721 {[0;1;32m...More and more of the little lights on the dome surface are changing
+to green!
+} T FAZUUL description
+
+
+FAZ722 {[0;1;32m...All of the little lights are now glowing green!
+} T FAZUUL description
+
+
+FAZ723 {[0;1;32m...The little lights are glowing brighter and brighter green!
+} T FAZUUL description
+
+
+FAZ725 {[0;1;32m***
+A few of the little lights on the dome surface are changing to green!
+} T FAZUUL description
+
+
+FAZ726 {[0;1;32m***
+More and more of the little lights on the dome surface are changing to
+green!
+} T FAZUUL description
+
+
+FAZ727 {[0;1;32m***
+All of the little lights on the dome surface are now glowing green!
+} T FAZUUL description
+
+
+FAZ728 {[0;1;32m***
+The little lights on the dome surface are glowing bright, bright green!
+} T FAZUUL description
+
+
+FAZ730 {[0;1;32m...The little lights on the dome surface flicker uncertainly for
+a moment, as if not quite sure what to do.
+} T FAZUUL description
+
+
+FAZ731 {[0;1;32m***
+The little lights on the dome surface are flickering uncertainly,
+as if not quite sure what to do!
+} T FAZUUL description
+
+
+FAZ732 {[0;1;32m***
+The green light on the control panel just lit up!
+} T FAZUUL description
+
+
+FAZ733 {[0;1;32m***
+The green light on the control panel just went out!
+} T FAZUUL description
+
+
+FAZ735 {[0;1;32m***
+All of the little lights on the dome surface have changed back to just
+random colors now...
+} T FAZUUL description
+
+
+FAZ736 {[0;1;32m***
+Some of the green lights on the dome surface are going out, or are
+changing to other, random colors...
+} T FAZUUL description
+
+
+FAZ740 {[0;1;32m***
+The wheel spins slower and slower, and the little ball in it comes to
+rest in the position numbered } T FAZUUL description
+
+
+FAZ745 {[0;1;32m***
+Great heavy panels are sliding over the openings to the west and south!
+***
+The panels have closed off the only exits!
+} T FAZUUL description
+
+
+FAZ746 {[0;1;32m***
+A great heavy panel suddenly slides down over the opening to your east!
+} T FAZUUL description
+
+
+FAZ747 {[0;1;32m***
+A great heavy panel suddenly slides down over the opening to your north!
+} T FAZUUL description
+
+
+FAZ748 {[0;1;32m***
+The grinfrazzitz suddenly begins to vibrate... soon the whole room is
+vibrating violently!  The vibration builds up and up to a fever pitch!
+} T FAZUUL description
+
+
+FAZ749 {[0;1;32m***
+You feel the walls vibrating as a great grinding noise comes from behind
+the panel!
+} T FAZUUL description
+
+
+FAZ750 {[0;1;32m***
+The panels over the portals to the west and south rise up, gliding
+silently into tracks in the wall, and leaving the openings clear again.
+} T FAZUUL description
+
+
+FAZ751 {[0;1;32m***
+The panel covering the opening to your east suddenly lifts up, gliding
+silently into tracks in the wall, and leaving the opening clear again.
+} T FAZUUL description
+
+
+FAZ752 {[0;1;32m***
+The panel covering the opening to your north suddenly lifts up, gliding
+silently into tracks in the wall, and leaving the opening clear again.
+} T FAZUUL description
+
+
+FAZ755 {[0;1;32m***
+Suddenly the flying sparks all become bright, electric red!
+} T FAZUUL description
+
+
+FAZ756 {[0;1;32m***
+Suddenly the flying sparks all become intense electric green!
+} T FAZUUL description
+
+
+FAZ757 {[0;1;32m***
+Suddenly the flying sparks all become blindingly bright white!
+} T FAZUUL description
+
+
+FAZ758 {[0;1;32m***
+Suddenly the flying sparks all become intense electric blue!
+} T FAZUUL description
+
+
+FAZ760 {[0;1;32m***
+The blue light on the control panel just lit up!
+} T FAZUUL description
+
+
+FAZ761 {[0;1;32m***
+The blue light on the control panel just went out!
+} T FAZUUL description
+
+
+FAZ768 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  All of the lights are
+off.  Directly to the east you can see the metastatic transfer chamber, a bare
+chrome-walled cubicle.  The exit from the control chamber is to the north.} T FAZUUL description
+
+
+FAZ769 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  The green light is lit
+up, but all of the others are off.  Directly to the east you can see the metastatic transfer chamber,
+a bare chrome-walled cubicle.  The exit from the control chamber is to the north.} T FAZUUL description
+
+
+FAZ770 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  The blue light is lit
+up, but all of the others are off.  Directly to the east you can see the metastatic transfer chamber,
+a bare chrome-walled cubicle.  The exit from the control chamber is to the north.} T FAZUUL description
+
+
+FAZ771 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  The green and blue
+lights are on, but both of the others are off.  Directly to the east you can see the
+metastatic transfer chamber, a bare chrome-walled cubicle.  The exit from the control
+chamber is to the north.} T FAZUUL description
+
+
+FAZ772 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  The gold light is lit
+up, but all of the others are off.  Directly to the east you can see the metastatic transfer chamber,
+a bare chrome-walled cubicle.  The exit from the control chamber is to the north.} T FAZUUL description
+
+
+FAZ773 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  The green and gold
+lights are lit up, but the blue and white ones are off.  Directly to the east you can
+see the metastatic transfer chamber, a bare chrome-walled cubicle.  The exit from the
+control chamber is to the north.} T FAZUUL description
+
+
+FAZ774 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  The blue and gold
+lights are lit up, but the other two are off.  Directly to the east you can see the
+metastatic transfer chamber, a bare chrome-walled cubicle.  The exit from the control
+chamber is to the north.} T FAZUUL description
+
+
+FAZ775 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  All of the lights
+except for the white one are brightly lit!  Directly to the east you can see the
+metastatic transfer chamber, a bare chrome-walled cubicle.  The exit from the control
+chamber is to the north.} T FAZUUL description
+
+
+FAZ776 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  The white light is lit
+up, but all of the others are off.  Directly to the east you can see the metastatic transfer chamber,
+a bare chrome-walled cubicle.  The exit from the control chamber is to the north.} T FAZUUL description
+
+
+FAZ777 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  The white light and the
+green light are lit up, but the other two are off.  Directly to the east you can see the
+metastatic transfer chamber, a bare chrome-walled cubicle.  The exit from the control
+chamber is to the north.} T FAZUUL description
+
+
+FAZ778 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  The white light and the
+blue light are lit up, but the other two are off.  Directly to the east you can see the
+metastatic transfer chamber, a bare chrome-walled cubicle.  The exit from the control
+chamber is to the north.} T FAZUUL description
+
+
+FAZ779 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  All of the lights
+except for the gold one are lit up!  Directly to the east you can see the metastatic transfer chamber,
+a bare chrome-walled cubicle.  The exit from the control chamber is to the north.} T FAZUUL description
+
+
+FAZ780 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  The white light and the
+gold light are lit up, but the other two are off.  Directly to the east you can see the
+metastatic transfer chamber, a bare chrome-walled cubicle.  The exit from the control
+chamber is to the north.} T FAZUUL description
+
+
+FAZ781 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  All of the lights
+except for the blue one are lit up!  Directly to the east you can see the metastatic transfer chamber,
+a bare chrome-walled cubicle.  The exit from the control chamber is to the north.} T FAZUUL description
+
+
+FAZ782 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  All of the lights
+except for the green one are lit up!  Directly to the east you can see the metastatic transfer chamber,
+a bare chrome-walled cubicle.  The exit from the control chamber is to the north.} T FAZUUL description
+
+
+FAZ783 {[0;1;32m...You have entered the metastatic control chamber.  Facing east from the center
+of the room is a control panel with four lights and a switch on it.  One of the lights
+appears to be green, one of them blue, one gold, and one white.  All four of the lights
+are lit up!  Directly to the east you can see the metastatic transfer chamber, a bare
+chrome-walled cubicle.  The exit from the control chamber is to the north.} T FAZUUL description
+
+
+FAZ785 {[0;1;32m...The button clicks into place!
+} T FAZUUL description
+
+
+FAZ786 {[0;1;32m***
+As the button is pressed, you hear a low, loud, grinding whistle, and
+sparks fly across the face of the panel.  A concealed fixture above the
+transfer chamber entrance blinks out OVERLOAD...OVERLOAD...OVERLOAD.
+A gout of smoke suddenly shoots from beneath the panel faceplate.
+} T FAZUUL description
+
+
+FAZ787 {[0;1;32m***
+You hear a low, loud grinding whistle all of a sudden, and the control
+room to the west is filled with light and sparks!  Then the control room
+fills up with smoke, but you do not feel anything.
+} T FAZUUL description
+
+
+FAZ790 {[0;1;32m***
+YOU'RE SUDDENLY GONE!
+***
+YOU'RE BEING SHOT THROUGH TUBES, WHIPPED AROUND, HERE, THERE, AND THE
+OTHER PLACE!
+***
+YOU'RE BLOWN THROUGH SPACE WARPS, TIME DOMAINS, SUBSPACE VORTEXES,
+INTERQUANTUMHYPERMETAMOLECULAR UPS AND DOWNS, BACKS AND FORTHS!
+***
+You're suddenly in the nexus of the Central Intergalactic Switching
+Network, and a voice boooms into your skull:
+
+ENTER YOUR DESTINATION COORDINATES: } T FAZUUL description
+
+
+FAZ791 {[0;1;32m***
+The metastatic transfer chamber to the east suddenly flashes bright white, and the image of the
+person standing there seems to sparkle and disintegrate into a scintillating
+wisp of gas... and then,
+            t h e y ' r e    g o n e !
+} T FAZUUL description
+
+
+FAZ792 {[0;1;32m...The button clicks into place!
+} T FAZUUL description
+
+
+FAZ793 {[0;1;32m***
+You suddenly see a bright flash of light and there is a wrenching
+sensation as though your component molecules are being disassembled
+and sent one at a time through the galactic switching network...
+and then, you feel yourself being re-assembled in a space away from
+space, and a time away from time...
+
+...And it begins to slowly dawn upon you that... you have won.
+
+YYYYYY
+YYYYYY
+AAAAAA
+AAAAAA
+HHHHHH         Your name has been logged to the system Audit Trail
+HHHHHH                   as proof of your victory.
+OOOOOO
+OOOOOO
+OOOOOO
+OOOOOO
+OOOOOO
+!!!!!!         We now return you to FAZUUL, so that you may enjoy
+!!!!!!                 the fruits of your triumph.
+} T FAZUUL description
+
+
+FAZ794 {[0;1;32m***
+THE VOICE BOOMS IN YOUR EARS:
+
+THOSE ARE ILLEGAL COORDINATES
+          ILLEGAL COORDINATES
+          ILLEGAL COORDINATES
+
+Your vision is suddenly obscured by a scintillating cloud of white mist!
+You feel a whirling, swirling motion, as though you are caught in a
+subspace vortex, and all of the objects you are carrying are ripped from
+your grasp!  Then the motion slowly subsides and your vision clears...
+} T FAZUUL description
+
+
+FAZ800 {[0;1;32m...The button seems to glow red hot as you press it down!
+} T FAZUUL description
+
+
+FAZ801 {[0;1;32m***
+The two lights start flashing madly on and off as a wild beeping starts
+emanating from beneath the console!
+} T FAZUUL description
+
+
+FAZ802 {[0;1;32m***
+You hear a mad beeping sound start up in the room to the east!
+} T FAZUUL description
+
+
+FAZ803 {[0;1;32m***
+You hear a mad beeping sound start up in the room to the north!
+} T FAZUUL description
+
+
+FAZ805 {[0;1;32m...It won't move -- it seems to be locked in place.
+} T FAZUUL description
+
+
+FAZ807 {[0;1;32m***
+The beeping just stopped, and the lights stopped flashing!
+} T FAZUUL description
+
+
+FAZ808 {[0;1;32m***
+The beeping sound coming from the room to the east just stopped!
+} T FAZUUL description
+
+
+FAZ809 {[0;1;32m***
+The beeping sound coming from the room to the north just stopped!
+} T FAZUUL description
+
+
+FAZ810 {[0;1;32m***
+The gold light on the control panel just lit up!
+} T FAZUUL description
+
+
+FAZ811 {[0;1;32m***
+The gold light on the control panel just went out!
+} T FAZUUL description
+
+
+FAZ812 {[0;1;32m***
+The light on the left-hand side of the console just lit up!
+} T FAZUUL description
+
+
+FAZ813 {[0;1;32m***
+The light on the left-hand side of the console just went out!
+} T FAZUUL description
+
+
+FAZ815 {[0;1;32m...It lit up just as you did that!
+} T FAZUUL description
+
+
+FAZ816 {[0;1;32m***
+You hear a whirring noise coming from the portal to the west!
+} T FAZUUL description
+
+
+FAZ817 {[0;1;32m...Where do you see a button like that?
+} T FAZUUL description
+
+
+FAZ820 {[0;1;32m***
+The blue globe suddenly comes down from the ceiling on a long rod made
+of some sort of crystalline material, making a whirring noise.
+} T FAZUUL description
+
+
+FAZ821 {[0;1;32m***
+The green globe suddenly comes down from the ceiling on a long rod made
+of some sort of crystalline material, making a whirring noise.
+} T FAZUUL description
+
+
+FAZ822 {[0;1;32m***
+The purple globe suddenly comes down from the ceiling on a long rod made
+of some sort of crystalline material, making a whirring noise.
+} T FAZUUL description
+
+
+FAZ823 {[0;1;32m***
+The red globe suddenly comes down from the ceiling on a long rod made
+of some sort of crystalline material, making a whirring noise.
+} T FAZUUL description
+
+
+FAZ824 {[0;1;32m***
+The yellow globe suddenly comes down from the ceiling on a long rod made
+of some sort of crystalline material, making a whirring noise.
+} T FAZUUL description
+
+
+FAZ825 {[0;1;32m***
+All of the globes suddenly retract back up to the ceiling with a flurry
+of whirring noises!
+} T FAZUUL description
+
+
+FAZ826 {[0;1;32m***
+The light on the right-hand side of the panel just lit up!
+} T FAZUUL description
+
+
+FAZ827 {[0;1;32m***
+The light on the right-hand side of the panel just went out!
+} T FAZUUL description
+
+
+FAZ830 {[0;1;32m***
+The lights in the hall are dimming, dimming, going out!  The north wall
+seems to glow a little in the darkness...
+} T FAZUUL description
+
+
+FAZ831 {[0;1;32m***
+The room through the portal to your east is suddenly getting darker and
+darker!
+} T FAZUUL description
+
+
+FAZ832 {[0;1;32m***
+The room through the portal to your north is suddenly getting darker and
+darker!
+} T FAZUUL description
+
+
+FAZ833 {[0;1;32m***
+The room through the portal to your west is suddenly getting darker and
+darker!
+} T FAZUUL description
+
+
+FAZ835 {[0;1;32m***
+The wall to your north suddenly clears and lights up to portray a three-
+dimensional scene showing hundreds of bizarre alien creatures shuffling
+about in some sort of cavernous chamber filled with machinery.  A voice
+suddenly seems to come into your head, saying: "Welcome to the
+X-gazax-bit tutorial seminar on GREEB assembly... here you see the
+factory where our dutiful X-gazax-bit factory workers are busily
+assembling the parts you need to make a GREEB of your very own...".
+} T FAZUUL description
+
+
+FAZ836 {[0;1;32m***
+The three-dimensional image in the north wall changes to show a pair
+of the bizarre aliens struggling to fit two mysterious devices together,
+and you hear the voice in your head again, saying: "Here Frilb and
+Zilf, X-gazax-bit's star assembly supervisors, are shown creating a
+WONGUM, one of the most hazardous assembly operations known.  That's
+Frilb holding the felafel!  Hi, Frilb!".  The image of one of the aliens
+looks up, grimaces briefly and waves a tentacle.
+} T FAZUUL description
+
+
+FAZ837 {[0;1;32m***
+The image in the north wall shows the aliens holding up the completed
+wongum, as the voice in your head continues: "Remember never to think
+about an operational WONGUM unless fully intending to!  Now, here's
+Aardvarb" -- a squat, snub-nosed alien trots up -- "with the QUAHOG!
+Let's ask Aardvarb what KIND of quahog that is!".  The image zooms in
+on what you take to be the creature's face.
+} T FAZUUL description
+
+
+FAZ838 {[0;1;32m***
+The image of Aardvarb on the north wall seems to twist and distort as a
+high-pitched voice comes into your head now: "This is the BAGLOON/DONGLE
+QUAHOG, Flisk!  None other will do!"  The original voice continues: "Yes!
+Now, we attach the WONGUM to the BAGLOON/DONGLE QUAHOG like this" -- the
+image shows the aliens grunting and sweating as they jam the two together
+-- "and voila!  A shiny new GREEB!  Always come to X-gazax-bit for all of
+your GREEB needs!".
+} T FAZUUL description
+
+
+FAZ840 {[0;1;32m***
+The wall to your north suddenly clears and lights up in a three-
+dimensional scene showing a panning view of the city you are in, as seen
+when it was still surrounded by desert.  A strange, whining voice comes
+into your head from some unseen source: "W-welcome to the
+F-flakoforeignjive vicarious desert exploration e-experience!".  The view
+pans past the city to fill the screen with desert.  "Our intrepid
+d-desert explorers show Y-YOU the wonders of the p-prairie without Y-YOU
+getting your t-tentacles fried off!"...
+} T FAZUUL description
+
+
+FAZ841 {[0;1;32m***
+The three-dimensional desert scene on the north wall begins to move toward
+you as the whining voice continues: "M-many sites of interest appear in
+the d-desert!  F-for instance, here is an ancient b-burial mound of the
+once-mighty Gastrointestinal Flingducks!".  The image pans over a shallow
+hill in the red sands.  "Or here, as we s-see, the s-site of the reknowned
+B-battle of the Oddlewokkus Blub!"  The screen displays a panorama of
+desert indistinguishable from any other.
+} T FAZUUL description
+
+
+FAZ842 {[0;1;32m***
+The scene displayed on the north wall grows darker suddenly, as the
+whining voice in your head takes on a conspiratorial tone: "B-but far to
+the east and north is a w-wonder that puts these others to sh-shame!".
+The scene pans across a dark dune field with strange monoliths of some
+kind jutting up from the sand here and there.  "The cemetary of the
+Ones From Beyond!  Oolgorb only knows what mysteries are revealed in
+the inscriptions on these t-tombstones!".
+} T FAZUUL description
+
+
+FAZ843 {[0;1;32m***
+The whining voice brightens again as the scene returns to show the city.
+"But never f-forget, if you must go into the desert yourself, to t-take
+your trusty m-mapping device with you!  The Flakoforeignjive brand
+mapping t-tool is made right here in this city from only the f-finest
+materials: the KOOTPOD/WAPPLE FASHNORK and the v-very NOODLE we have all
+g-grown to know and l-love!  Now available from b-better merchants
+everywhere, under the trademark-K-K-" -- the image seems to flicker
+suddenly and then turns to bright white.
+} T FAZUUL description
+
+
+FAZ845 {[0;1;32m***
+The wall to your north clears suddenly and lights up with a scene in a
+dank, grubby room crowded with aliens sitting at several small, grimy
+tables.  The two misanthropic-looking aliens at the table in the
+foreground begin to argue heatedly: "Why no I did not never nohow not
+touch one of your filthy nebbish!" says one.  The other slaps a tentacle
+on the table and declares: "Why my lovely nebbish you then have held
+holding there in your filthy fingers?!"...
+} T FAZUUL description
+
+
+FAZ846 {[0;1;32m***
+The two aliens shown in the foreground on the north wall suddenly push
+back their chairs and stand.  The first one leans forward and yells: "My
+nebbish not never nohow anyhow your filthy nebbish!".  The other slaps
+his side-pocket meaningfully and says: "Well my X-gazax-bits SCROOM just
+about that something to say might have!"  The first alien appears taken
+aback, then suddenly turns and starts to run for the door.
+} T FAZUUL description
+
+
+FAZ847 {[0;1;32m***
+The scene on the north wall shows the alien running for the door suddenly
+flipping over backwards, goods of all sorts spilling out of his pockets
+onto the floor.  The scene shifts to show the other alien blowing coolly
+across the muzzle of his unholstered scroom, then undulating casually
+over to snatch up the nebbish the first one had dropped.  Another, more
+mature voice now eases in over the uproar: "Be sure.  Be protected.
+Talk softly but carry your X-gazax-bits SCROOM with you at all times."...
+} T FAZUUL description
+
+
+FAZ848 {[0;1;32m***
+The scene on the north wall shows the first alien picking himself up
+from the floor and dusting himself off while the other aliens in the
+area scramble after his lost possessions.  With what appears to be a
+rueful look on what you suppose to be his face, he says: "Well I didn't
+never nohow mean not to take your nebbish.  That's one right decent
+SCROOM you have there pardner.  What's say we be friends?".
+} T FAZUUL description
+
+
+FAZ850 {[0;1;32m***
+The north wall returns to a sort of opaque mistiness as the lights in
+the hall slowly come up to full brightness again.
+} T FAZUUL description
+
+
+FAZ851 {[0;1;32m***
+The room through the portal to your east is suddenly becoming light
+again!
+} T FAZUUL description
+
+
+FAZ852 {[0;1;32m***
+The room through the portal to your north is suddenly becoming light
+again!
+} T FAZUUL description
+
+
+FAZ853 {[0;1;32m***
+The room through the portal to your west is suddenly becoming light
+again!
+} T FAZUUL description
+
+
+FAZ855 {[0;1;32m***
+Giant floodlights in the ceiling suddenly turn on, revealing a huge,
+intricate machine of some sort in the center of the room, with a pale
+orange corona surrounding it.  A chute, leading into the machine, is off
+to one side.
+} T FAZUUL description
+
+
+FAZ856 {[0;1;32m***
+The giant floodlights in the ceiling suddenly turn off, leaving you
+in complete darkness.
+} T FAZUUL description
+
+
+FAZ858 {[0;1;32m***
+One of the floating globules just touched your mongoo, and they both
+vanished in a cloud of smoke!
+} T FAZUUL description
+
+
+FAZ860 {[0;1;32m***
+The coils in the area to your east have just started to hum and glow!
+} T FAZUUL description
+
+
+FAZ861 {[0;1;32m***
+A humming sound suddenly starts up in the room to your west!
+} T FAZUUL description
+
+
+FAZ862 {[0;1;32m***
+A humming sound suddenly starts up in the room to your south!
+} T FAZUUL description
+
+
+FAZ863 {[0;1;32m***
+The giant coils suddenly begin to glow and hum!
+} T FAZUUL description
+
+
+FAZ865 {[0;1;32m
+The coils in the area to your east just started humming even more
+powerfully!
+} T FAZUUL description
+
+
+FAZ866 {[0;1;32m***
+The humming in the room to your west just got louder and more powerful!
+} T FAZUUL description
+
+
+FAZ867 {[0;1;32m***
+The humming in the room to your south just got louder and more powerful!
+} T FAZUUL description
+
+
+FAZ868 {[0;1;32m***
+The giant coils beside and above you just started humming even more
+powerfully!
+} T FAZUUL description
+
+
+FAZ870 {[0;1;32m
+The coils in the area to your east just stopped humming suddenly!
+} T FAZUUL description
+
+
+FAZ871 {[0;1;32m***
+The humming in the room to your west just stopped!
+} T FAZUUL description
+
+
+FAZ872 {[0;1;32m***
+The humming in the room to your south just stopped!
+} T FAZUUL description
+
+
+FAZ873 {[0;1;32m***
+The giant coils beside and above you just stopped humming suddenly!
+} T FAZUUL description
+
+
+FAZ874 {[0;1;32m***
+The light on the console just lit up!
+} T FAZUUL description
+
+
+FAZ875 {[0;1;32m***
+The white light on the control panel just lit up!
+} T FAZUUL description
+
+
+FAZ876 {[0;1;32m***
+The white light on the control panel just went out!
+} T FAZUUL description
+
+
+FAZ877 {[0;1;32m***
+The light on the console just went out!
+} T FAZUUL description
+
+
+FAZ878 {[0;1;32m...The lights dim momentarily as you do so.
+} T FAZUUL description
+
+
+FAZ879 {[0;1;32m***
+The air suddenly feels full of an indefinable energy rushing in all
+directions!
+} T FAZUUL description
+
+
+FAZ880 {[0;1;32m...Nothing seems to happen.
+} T FAZUUL description
+
+
+FAZ881 {[0;1;32m...It doesn't work, the button seems to be locked up somehow.
+} T FAZUUL description
+
+
+FAZ885 {[0;1;32m...The box opens up, and a traset falls out!
+} T FAZUUL description
+
+
+FAZ886 {[0;1;32m***
+A traset falls out of the box onto the floor!
+} T FAZUUL description
+
+
+FAZ887 {[0;1;32m...The box appears to be empty.
+} T FAZUUL description
+
+
+FAZ888 {[0;1;32m...The box opens up, and a rebozo falls out!
+} T FAZUUL description
+
+
+FAZ889 {[0;1;32m***
+A rebozo falls out of the box onto the floor!
+} T FAZUUL description
+
+
+FAZ890 {[0;1;32m...A voice seems to single itself out from the swirling cacophony:
+"Beware the scroom!"
+} T FAZUUL description
+
+
+FAZ891 {[0;1;32m...A voice seems to single itself out from the swirling cacophony:
+"The bork is very sensitive to telepathic influence!"
+} T FAZUUL description
+
+
+FAZ892 {[0;1;32m...A voice seems to single itself out from the swirling cacophony:
+"The coils need a torkus to clear their quantum field windings!"
+} T FAZUUL description
+
+
+FAZ893 {[0;1;32m...A voice seems to single itself out from the swirling cacophony:
+"Examine a wigglesnort!"
+} T FAZUUL description
+
+
+FAZ894 {[0;1;32m...A voice seems to single itself out from the swirling cacophony:
+"For mongoo madness, put a torkus and a gwingus together!"
+} T FAZUUL description
+
+
+FAZ895 {[0;1;32m...A voice seems to single itself out from the swirling cacophony:
+"Try the frakkle in the transporter!"
+} T FAZUUL description
+
+
+FAZ896 {[0;1;32m...A voice seems to single itself out from the swirling cacophony:
+"The bagloon only works if you point it at an atom!"
+} T FAZUUL description
+
+
+FAZ897 {[0;1;32m...A voice seems to single itself out from the swirling cacophony:
+"A gwirg is a humanoid's best friend!"
+} T FAZUUL description
+
+
+FAZ898 {[0;1;32m...A voice seems to single itself out from the swirling cacophony:
+"Try the products of the granfalloon in the ribbenfratz!"
+} T FAZUUL description
+
+
+FAZ899 {[0;1;32m...A voice seems to single itself out from the swirling cacophony:
+"The granfalloon will often accept a mongoo!"
+} T FAZUUL description
+
+
+FAZ900 {[0;1;32m***
+The portals to your east and north suddenly flash brightly and vanish!
+***
+The portals to your east and north suddenly re-appear, but there is much
+less light coming through them now.
+} T FAZUUL description
+
+
+FAZ901 {[0;1;32m***
+The portal to your west suddenly flashes brightly and then vanishes!
+} T FAZUUL description
+
+
+FAZ902 {[0;1;32m***
+The portal to your south suddenly flashes brightly and then vanishes!
+} T FAZUUL description
+
+
+FAZ903 {[0;1;32m***
+Suddenly there is a bright flash of light, and a portal opens in the
+wall to your west!
+} T FAZUUL description
+
+
+FAZ904 {[0;1;32m***
+Suddenly there is a bright flash of light, and a portal opens in the
+wall to your south!
+} T FAZUUL description
+
+
+FAZ905 {[0;1;32m***
+The portals to your east and north suddenly flash brightly and vanish!
+***
+The portals to your east and north suddenly re-appear, but there is more
+light coming through them now.
+} T FAZUUL description
+
+
+FAZ906 {[0;1;32m***
+Suddenly there is a bright flash of light, and a portal opens in the
+wall to your west!
+} T FAZUUL description
+
+
+FAZ907 {[0;1;32m***
+Suddenly there is a bright flash of light, and a portal opens in the
+wall to your south!
+} T FAZUUL description
+
+
+FAZ908 {[0;1;32m***
+The portal to your west suddenly flashes brightly and then vanishes!
+} T FAZUUL description
+
+
+FAZ909 {[0;1;32m***
+The portal to your south suddenly flashes brightly and then vanishes!
+} T FAZUUL description
+
+
+FAZ1000 {[0;1;32m...The gwingus appears roughly spherical, with a slight speckled effect to its
+surface.  It is a dull metallic silver in color, and it has a small blue pushbutton
+built into one end.
+} T FAZUUL description
+
+
+FAZ1001 {[0;1;32m...The torkus is long and rectangular, and appears to be made of a clear, cool
+crystalline compound of some kind.
+} T FAZUUL description
+
+
+FAZ1002 {[0;1;32m...The mongoo is a rod about an inch in diameter.  It feels cold to the touch, even
+once you have been holding it for a while.
+} T FAZUUL description
+
+
+FAZ1003 {[0;1;32m...The snuge is a sort of cube with little holes in one side and a button on the
+other side.  It is bright red.
+} T FAZUUL description
+
+
+FAZ1004 {[0;1;32m...The wigglesnort is a small disk, sort of like a coin, except in the shape
+of a hexagon.
+} T FAZUUL description
+
+
+FAZ1005 {[0;1;32m...The dampish is shaped like a ping-pong paddle except that near the joint
+between the handle and the flat part there is a small white button.
+} T FAZUUL description
+
+
+FAZ1006 {[0;1;32m...The frakkle is shaped like a smoothly worn pebble.  It bears an inscription
+reading: "Eggs are forever".
+} T FAZUUL description
+
+
+FAZ1007 {[0;1;32m...The bilge is a little green box with a button recessed into one side.
+} T FAZUUL description
+
+
+FAZ1008 {[0;1;32m...The bork is a perfectly smooth sphere about the size of a bowling ball.  It
+seems unusually light for its size.
+} T FAZUUL description
+
+
+FAZ1009 {[0;1;32m...The rukkle is a small oblong piece of some kind of blue metal.  The inscription
+on it says: "Eggs are forever".
+} T FAZUUL description
+
+
+FAZ1010 {[0;1;32m...The framus is a bar of clear, cool crystalline material that seems to calm the
+nerves in your hand as you hold it.
+} T FAZUUL description
+
+
+FAZ1011 {[0;1;32m...The rhubarb is a spongy ball of something resembling orange styrofoam.  It is
+very light.
+} T FAZUUL description
+
+
+FAZ1012 {[0;1;32m...The gongo is an X-shaped object about five inches from tip to tip.  It feels
+strangely cold to the touch.
+} T FAZUUL description
+
+
+FAZ1013 {[0;1;32m...The moolkoo is a yellow ovoid of a mysterious substance that doesn't seem to
+be quite entirely matter.  Looking at it, you can't help but get the feeling
+that it is trying to communicate with you.
+} T FAZUUL description
+
+
+FAZ1014 {[0;1;32m...The wufflar is a torus (a donut-shaped object) with a little red pushbutton
+protruding from the inside of the hole.
+} T FAZUUL description
+
+
+FAZ1015 {[0;1;32m...The nylarx is shaped roughly spherically, but it has a jagged curve running
+almost all the way around the outside.  It makes a little whirring noise, and
+occasionally something will bump around inside it as if trying to get out.
+} T FAZUUL description
+
+
+FAZ1016 {[0;1;32m...The tracton is made up of many filaments of a very thin, fine wire.  The wire
+is composed of a cool, clear crystalline substance.
+} T FAZUUL description
+
+
+FAZ1017 {[0;1;32m...The suvar is a cylindrical brown box with a gold stripe down one side.  On one
+end there is a little switch of some kind, and on the other is a sort of
+horn-shaped aperture.
+} T FAZUUL description
+
+
+FAZ1018 {[0;1;32m...The ravus is shaped like two wide, thin boxes, sitting parallel, with a bar
+connecting them in the middle.  The edges of the boxes are transparent, and a
+bright light of some kind can be seen sparkling inside.
+} T FAZUUL description
+
+
+FAZ1019 {[0;1;32m...The sepper has two handles on one end, joined to a body that is roughly cone-shaped,
+tapering away to a dull point at the end away from the handles.  It smells
+faintly of ozone.
+} T FAZUUL description
+
+
+FAZ1020 {[0;1;32m...The palt is a pocket-sized piece of curved metal which tapers to a point at
+one end.  It is bright blue.
+} T FAZUUL description
+
+
+FAZ1021 {[0;1;32m...The traset is a collection of greenish-white cylinders apparently held together
+with a strong force field of some kind.  The cylinders make a clanking sound
+as you move them around each other.
+} T FAZUUL description
+
+
+FAZ1022 {[0;1;32m...The cistle is made up of a series of small blue rings looping around to form
+a larger ring.  Resting between two of the blue rings is a small blue button.
+} T FAZUUL description
+
+
+FAZ1023 {[0;1;32m...The torrel looks a little like a grocery bag that has been inflated with air
+until somewhat round around the sides.  It is made of a strange leathery
+material that feels cold to the touch.
+} T FAZUUL description
+
+
+FAZ1024 {[0;1;32m...The rommus is a flat black box with a button recessed into one end.  It looks
+sort of beat up, as though nobody has had any use for it.
+} T FAZUUL description
+
+
+FAZ1025 {[0;1;32m...The ruckus is a sort of flexible, mushy bag about the size and shape of a
+football.  It looks a little scuffed up.
+} T FAZUUL description
+
+
+FAZ1026 {[0;1;32m...The bundle appears to be a little silver box with a long wire dangling out
+of one side and a switch built into the other.
+} T FAZUUL description
+
+
+FAZ1027 {[0;1;32m...The nabob is a spiral-shaped tube about three feet long.  One end of the tube
+has a button built into it, while the other terminates in a metal plate that
+seems to glow most of the time.
+} T FAZUUL description
+
+
+FAZ1028 {[0;1;32m...The bagloon is a complicated-looking affair, with tubing and strange crystalline
+wires covering its exterior.  It has two handles situated on one side, across
+from what appears to be a focusing mechanism of some sort.
+} T FAZUUL description
+
+
+FAZ1029 {[0;1;32m...The snarp is a slender metallic ellipsoid with an inscription appearing along
+one side.  The inscription reads: "Eggs are forever".
+} T FAZUUL description
+
+
+FAZ1030 {[0;1;32m...The dweezle consists of a solid hemispherical section of a milky-white color
+and a cube-like section attached to the hemisphere in the middle of its flat
+side.  There appears to be a pushbutton on one side of the cube.
+} T FAZUUL description
+
+
+FAZ1031 {[0;1;32m...The flingle is a round, flat solid with opaque gold faces but transparent
+edges.  Something sparkling inside can be seen by peering through the edges.
+} T FAZUUL description
+
+
+FAZ1032 {[0;1;32m...The zarkon is a dull black sphere about the size of a golf ball.  It seems
+very heavy, and it even appears to be getting heavier all the time, although
+this is probably an illusion.
+} T FAZUUL description
+
+
+FAZ1033 {[0;1;32m...The cacapoo is a flexible green band of a sort of plastic-like substance.
+} T FAZUUL description
+
+
+FAZ1034 {[0;1;32m...The kootpod appears to be made of five cylindrical pieces which come together
+in a central hub made of some kind of glass.  Dimly through the glass you can
+see some kind of mechanism inside.  The outer faces of the cylinders appear to
+glow most of the time.
+} T FAZUUL description
+
+
+FAZ1035 {[0;1;32m...The dongle is a glowing purple sphere about the size of a baseball, with
+thousands of tiny little holes perforating its surface.  Light seems to dance
+across the face of the dongle as you turn it this way and that.
+} T FAZUUL description
+
+
+FAZ1036 {[0;1;32m...The bagloon is a complicated-looking affair, with tubing and strange
+crystalline wires covering its exterior.  It has two handles situated on one
+side, across from what appears to be a focusing mechanism of some sort.
+} T FAZUUL description
+
+
+FAZ1037 {[0;1;32m...The felafel is a sort of thin hemisphere formed out of a very fine wire
+mesh.  Near one end there is a tiny black box embedded in the mesh.
+} T FAZUUL description
+
+
+FAZ1038 {[0;1;32m...The zarkon is a dull black sphere about the size of a golf ball.  It seems
+very heavy, and it even appears to be getting heavier all the time, although
+this is probably an illusion.
+} T FAZUUL description
+
+
+FAZ1039 {[0;1;32m...The kwish has three lobes protruding out from it symmetrically in all directions,
+as though it were formed by merging three tennis balls partway together.  In
+the middle is a triangular hole, and on one side is a little button.
+} T FAZUUL description
+
+
+FAZ1040 {[0;1;32m...The snalt is a cube of cool clear crystalline material with a glowing green
+sphere embedded in its center.
+} T FAZUUL description
+
+
+FAZ1041 {[0;1;32m...The quorum is a round red box made of some hard, brittle substance.  It has
+a large red button on one face, with a glowing gold ring around it.
+} T FAZUUL description
+
+
+FAZ1042 {[0;1;32m...The fracas is a wide, metallic green disk, bowed out a little in the center,
+as though it were a section of a sphere.  There seems to be a handle of some
+sort protruding from the middle of the concave side, formed of three rounded
+tetrahedra that meet in the center of the disk.
+} T FAZUUL description
+
+
+FAZ1043 {[0;1;32m...The dweezle consists of a solid hemispherical section of a milky-white color
+and a cube-like section attached to the hemisphere in the middle of its flat
+side.  There appears to be a pushbutton on one side of the cube.
+} T FAZUUL description
+
+
+FAZ1044 {[0;1;32m...The kootpod appears to be made of five cylindrical pieces which come together
+in a central hub made of some kind of glass.  Dimly through the glass you can
+see some kind of mechanism inside.  The outer faces of the cylinders appear
+to glow most of the time.
+} T FAZUUL description
+
+
+FAZ1045 {[0;1;32m...The wapple consists of a blue toroid connected by a long thin wire to a
+switch.  The wire is only partly solid in that it can pass through itself
+without getting tangled, but it cannot be stretched beyond a certain length.
+} T FAZUUL description
+
+
+FAZ1046 {[0;1;32m...The bagloon is a complicated-looking affair, with tubing and strange
+crystalline wires covering its exterior.  It has two handles situated on one
+side, across from what appears to be a focusing mechanism of some sort.
+} T FAZUUL description
+
+
+FAZ1047 {[0;1;32m...The nebbish looks like a set of three parallel transparent tubes held
+together by a sheet of red fire.  A pistol-grip-type handle on the bottom
+allows for easy carrying of the device.
+} T FAZUUL description
+
+
+FAZ1048 {[0;1;32m...The quahog is a complicated collection of elements, all interconnected by
+glowing lines of energy.  A spark shoots out of its interior from time to
+time.  A glowing corona of ionized air surrounding it seems to always trap the
+sparks before they can do any damage.
+} T FAZUUL description
+
+
+FAZ1049 {[0;1;32m...The wongum appears to be an amorphous energy field of a light green color.
+It will not allow your hands to compress it beyond a certain point, but it
+does not have a definite shape either.  Little flashes of light escape from it
+periodically.
+} T FAZUUL description
+
+
+FAZ1050 {[0;1;32m...The narret is a featureless gold sphere about the size of a basketball.  It
+seems to weigh about ten pounds.
+} T FAZUUL description
+
+
+FAZ1051 {[0;1;32m...The quahog is a complicated collection of elements, all interconnected by
+glowing lines of energy.  A spark shoots out of its interior from time to
+time.  A glowing corona of ionized air surrounding it seems to always trap the
+sparks before they can do any damage.
+} T FAZUUL description
+
+
+FAZ1052 {[0;1;32m...The greeb is a long thin tube of some sort of thick metallic mesh, wound
+around itself in a spiral pattern.  Iridescent patterns of light play over
+its surface.  The ends of the tube are transparent, and a sparkling light of
+some kind can be seen inside.
+} T FAZUUL description
+
+
+FAZ1053 {[0;1;32m...The drivel is a group of four boxes arranged in a square pattern with a
+small spacing between them.  Thin transparent rods seem to be what holds the
+boxes to together.  There is a button on the underside of one of the boxes.
+} T FAZUUL description
+
+
+FAZ1054 {[0;1;32m...The quahog is a complicated collection of elements, all interconnected by
+glowing lines of energy.  A spark shoots out of its interior from time to
+time.  A glowing corona of ionized air surrounding it seems to always trap the
+sparks before they can do any damage.
+} T FAZUUL description
+
+
+FAZ1055 {[0;1;32m...The foonprize is a bright silver dodecahedron, about an inch in diameter.
+It seems to weigh about a pound.
+} T FAZUUL description
+
+
+FAZ1056 {[0;1;32m...The narn appears to be a hodgepodge of miscellaneous elements, all held
+together by some sort of attractive force at the center.  It seems to shoot
+out waves of some unknown type in all directions once every few seconds.
+} T FAZUUL description
+
+
+FAZ1057 {[0;1;32m...The zleen is a small round furry creature with big beady eyes, a cute
+little black nose, and great white whiskers.  It does not appear to have any
+legs, but it is able to wiggle all around in a rubbery sort of way.
+} T FAZUUL description
+
+
+FAZ1058 {[0;1;32m...The noodle is a foamy mass of blue goop that somehow manages to keep from
+coming apart or sticking to your skin.
+} T FAZUUL description
+
+
+FAZ1059 {[0;1;32m...The flungoon is a flat golden disk, with raised edges.  It has little bumps
+covering its surface that look as though they might erupt at any moment.
+} T FAZUUL description
+
+
+FAZ1060 {[0;1;32m...The scroom is a short, menacing-looking section of black tube, with a
+pistol-grip handle on one end and an antenna sticking partway out the other.
+Little red lights run up and down one side of the tube.
+} T FAZUUL description
+
+
+FAZ1061 {[0;1;32m...The rebozo is shaped something like a flying saucer, with two gently curved
+surfaces meeting at a sharp edge.  It makes very soft beeping noises, and is
+much heavier on one side than on the other.
+} T FAZUUL description
+
+
+FAZ1062 {[0;1;32m...The fashnork has three arms coming out of a thin midsection, each arm
+terminating in a stub end.  On one end of the midsection there is a glowing
+gold button.
+} T FAZUUL description
+
+
+FAZ1063 {[0;1;32m...The ceeveese is a hand-sized black box with three little white spheres
+sticking out of one end.  The other end appears to have a little rectangular
+bezel on it, as though there were some sort of display or readout within the
+bezel.
+} T FAZUUL description
+
+
+FAZ1064 {[0;1;32m...The quice is a round furry thing.  It would be difficult to say whether it
+is alive or not, just from looking at it.  However, it feels warm to the
+touch, and it makes a whooshing sound every now and then.
+} T FAZUUL description
+
+
+FAZ1065 {[0;1;32m...The kootpod appears to be made of five cylindrical pieces which come
+together in a central hub made of some kind of glass.  Dimly through the
+glass you can see some kind of mechanism inside.  The outer faces of the
+cylinders appear to glow most of the time.
+} T FAZUUL description
+
+
+FAZ1066 {[0;1;32m...The snaack is a set of thick metal plates bolted together and supported by
+some sort of antigravity field so that it is possible to carry it.  There is
+a button located in the middle of the plate on the front end.
+} T FAZUUL description
+
+
+FAZ1067 {[0;1;32m...The babbalisk is a glowing reddish ball with six short spikes protruding
+from it in all directions.  In between two of the spikes there appears to be
+a little door, which is closed.
+} T FAZUUL description
+
+
+FAZ1068 {[0;1;32m...The quilbert is a cylinder about a foot long, with a cube of some sort of
+spongy plastic attached to one end.  As you tilt it back and forth, something
+sounds as though it is rolling around inside.
+} T FAZUUL description
+
+
+FAZ1069 {[0;1;32m...The desk is a slab of some purplish metal, held to the floor by a series of
+thin rods running down its center.  An inscription on the desk reads: LIVE
+USERS HAVE MORE FUN!  The desk does not appear to have any drawers.
+} T FAZUUL description
+
+
+FAZ1070 {[0;1;32m...The dirt is just plain old dirt.
+} T FAZUUL description
+
+
+FAZ1071 {[0;1;32m...The slot is in the shape of a hexagon, about the size of a coin.  There are
+little scratches around its edges, as though something metallic has been
+inserted into it many times.
+} T FAZUUL description
+
+
+FAZ1072 {[0;1;32m...The slot is about the size of your fist, and is shaped like the outline of
+an egg.  Peering into it, you see nothing but a black hole.
+} T FAZUUL description
+
+
+FAZ1073 {[0;1;32m...The map is very faded.  About the only thing you can make out on it is a
+little red x with some lettering beside it that looks as though it might
+read "You Are Here".
+} T FAZUUL description
+
+
+FAZ1074 {[0;1;32m...The osmotic is a large hemisphere with a perfectly smooth, mirror-like
+finish.  The flat side of the hemisphere hovers an inch or two off the floor,
+with no visible means of support.
+} T FAZUUL description
+
+
+FAZ1075 {[0;1;32m...The cases are made of some sort of transparent crystal, with bands of some
+silvery metal along the corners.  They are filled with some really weird
+substance.
+} T FAZUUL description
+
+
+FAZ1076 {[0;1;32m...The substance is ...well... weird.  It can't really be described, it is
+so strange.
+} T FAZUUL description
+
+
+FAZ1077 {[0;1;32m...The globe is huge, at least 50 feet in diameter.  It is glowing over its
+entire surface with a pearly white light.
+} T FAZUUL description
+
+
+FAZ1078 {[0;1;32m...The globe is huge, at least 50 feet in diameter.  It is glowing over its
+entire surface with a pearly white light.
+} T FAZUUL description
+
+
+FAZ1079 {[0;1;32m...The gate is a small set of hinged panels that swing freely on soundless
+hinges.  It seems to be made of a purplish metal.
+} T FAZUUL description
+
+
+FAZ1080 {[0;1;32m...The gate is a magnificent tall opening in the city wall, with fancy
+scrollery engraved into the stone all around it.
+} T FAZUUL description
+
+
+FAZ1081 {[0;1;32m...The instructions say:
+
+"Foon-Ball is played with a ysmaric virtual ball in a holographically
+projected playing field just above eye level.  There are seven regions
+in the playfield, arranged in a figure-eight pattern.  Fong is in the
+center; the left-hand lobe of the figure consists of, in clockwise
+order, ormush, kleng, and noodiddle; and the right-hand lobe encompasses
+pleebor, oomwazzitz, and neblin.
+
+"The object of the game is to slap the foon-ball just as it finishes
+tracing a path of three consecutive positions that follow the
+figure-eight.  For example, ormush-fong-pleebor is a winning pattern;
+but oomwazzitz-neblin-noodiddle is not.  Most non-winning slaps are not
+fatal.  HOWEVER: Any attempt to slap the foon-ball just after it has
+"crossed the middle" of either lobe of the playfield results in a loss
+to the player that slapped the ball.
+
+"Any number can play at once -- drop a gwingus in the slot to begin
+a match."
+} T FAZUUL description
+
+
+FAZ1082 {[0;1;32m...The lights are little tiny point sources, fitted together in a grid pattern
+with no more than one or two millimeters between them.  They are all changing
+color constantly in a seemingly random pattern.
+} T FAZUUL description
+
+
+FAZ1083 {[0;1;32m...The machine consists of three components: one, a smooth purple spheroid,
+with a flat section facing outwards; secondly, a complex little arrangement of nebbers, all
+clustered around a zelfwaddle; and third, a collection of pulley-like mechanisms,
+which adorn what appears to be a conduit leading up to a chute, accessible at waist
+level.  The whole machine is suffused with a gentle orange light, surrounding it like
+a corona.
+} T FAZUUL description
+
+
+FAZ1088 {[0;1;32m...The wheel is shaped like a concave dish, with little dividers running out
+from the center, separating regions that alternate red and black in color.
+Each region seems to have a little number inscribed in it, and the numbers
+run from 1 up to 36.  A small silver metal ball is resting in one of the
+regions, held in place by the dividers on either side.
+} T FAZUUL description
+
+
+FAZ1089 {[0;1;32m...The grinfrazzitz is composed of a set of vertical bars set into the floor,
+with rings of some crystalline substance wrapped around the bars.  Built into
+the base of the grinfrazzitz is a small control panel, with a pushbutton on it.
+} T FAZUUL description
+
+
+FAZ1090 {[0;1;32m...The tables are made of a purplish metal, and consist of flat slabs turned
+down at the ends with silvery poles extending from the slab edges down to the
+floor.
+} T FAZUUL description
+
+
+FAZ1091 {[0;1;32m...The sparks are of all kinds, from great balls of fire to tiny specks.  Some
+are diffuse and nebulous, others sharp and intense.  They are all flying out
+of the walls continuously at great speed, but they seem to pass through and
+by you without doing you any more harm than occasionally singeing your
+whiskers.
+} T FAZUUL description
+
+
+FAZ1092 {[0;1;32m...It's thick, deep pile of some unknown material.
+} T FAZUUL description
+
+
+FAZ1093 {[0;1;32m...The stars like dust are all around, forming great swaths of glittering
+color.  Three of them seem particularly bright, one slightly reddish, one
+somewhat blue, and one a pale purple.
+} T FAZUUL description
+
+
+FAZ1094 {[0;1;32m...There's nothing remarkable about it.
+} T FAZUUL description
+
+
+FAZ1095 {[0;1;32m...The machinery is almost too alien and complicated to describe.  Hundreds of
+channels running out of it feed into the long tube in various ways, and little
+chatterings and flickerings within it attest to some sort of activity going
+on, but what that activity might be, you cannot tell.
+} T FAZUUL description
+
+
+FAZ1096 {[0;1;32m...The panel has just one large blue button in its center, which seems to be
+glowing faintly.  The four lights are small hemispheres arrayed across the
+top of the panel, one green, one blue, one gold, and one white.
+} T FAZUUL description
+
+
+FAZ1097 {[0;1;32m...The hopper is shaped like an inverted cone, about three feet in diameter.
+It appears to be made of some shiny greyish-green material.
+} T FAZUUL description
+
+
+FAZ1098 {[0;1;32m...It's a clean, sparse console with two lights and a pushbutton.  The
+pushbutton is labelled "S".
+} T FAZUUL description
+
+
+FAZ1099 {[0;1;32m...The buttons are shaped like little ovals, one blue, one red, one green, one
+yellow, and one purple.  They are arranged in a vertical line about four feet
+off the floor on the south wall of the room.
+} T FAZUUL description
+
+
+FAZ1100 {[0;1;32m...The globes are filled with a swirling gas of some kind that upon closer
+examination seems to be made up of three separate gases that don't mix.  Tiny
+sparkling lights fly about between the separate components as they swirl
+around each other.
+} T FAZUUL description
+
+
+FAZ1101 {[0;1;32m...The desk appears to be a solid block of some metallic gold material.  No
+drawers or apertures of any kind are visible.
+} T FAZUUL description
+
+
+FAZ1102 {[0;1;32m...The light pattern is a constantly changing swirl of vibrant colors.  It
+flits about the room from wall to wall and floor to ceiling in a wild sort of
+dancing motion.  It is difficult to look at for very long without getting a
+headache.
+} T FAZUUL description
+
+
+FAZ1103 {[0;1;32m...The light pattern is a constantly changing swirl of vibrant colors.  It
+flits about the room from wall to wall and floor to ceiling in a wild sort of
+dancing motion.  It is difficult to look at for very long without getting a
+headache.
+} T FAZUUL description
+
+
+FAZ1104 {[0;1;32m...The granfalloon is composed of a series of vertical sections of dull gold
+material, attached together horizontally with black cylinders.  In the face
+of the granfalloon is a wide slot, and a strange dish-shaped device
+protruding from the upper part of it seems to focus at a spot on the floor
+right in front of the device.
+} T FAZUUL description
+
+
+FAZ1105 {[0;1;32m...The benches are of a wide, straight-backed design, and seem to be made of
+a purplish metal.
+} T FAZUUL description
+
+
+FAZ1106 {[0;1;32m...The ribbenfratz has three large tubes running up from the floor into a red
+cube with a slot in its side.  Three bars run out horizontally from the cube
+and disappear into the wall to the west.
+} T FAZUUL description
+
+
+FAZ1107 {[0;1;32m...The globules seem to glow a dim orange as they float about the room.  They
+are almost transparent but they have a slight milkiness to them, a little
+like jellyfish.
+} T FAZUUL description
+
+
+FAZ1108 {[0;1;32m...The light is eerie, indefinable.  It seems faintly menacing somehow.
+} T FAZUUL description
+
+
+FAZ1109 {[0;1;32m...The coils are made of some type of crystalline tubing about six inches in
+diameter, and are wound into a series of great loops several feet wide and
+twenty to thirty feet long.  A long thick cylinder of the same crystalline
+material seems to run down the center of the coils.
+} T FAZUUL description
+
+
+FAZ1110 {[0;1;32m...The hopper appears to be made of a smooth, greyish-green material.  Its
+mouth is about three feet wide, and it narrows down to a foot or so in width
+at its base, where it merges with the floor.  Peering down into the hopper,
+you see a faintly shimmering curtain of light covering the aperture at the
+bottom.
+} T FAZUUL description
+
+
+FAZ1111 {[0;1;32m...The desks are I-shaped sections of some purplish metal, arrayed in five
+rows of three each.  They don't appear to have any drawers or concealed
+compartments of any kind.
+} T FAZUUL description
+
+
+FAZ1112 {[0;1;32m...It's just a simple console with one button and one light.
+} T FAZUUL description
+
+
+FAZ1113 {[0;1;32m...It appears to be some form of dynamic alien art -- very pretty, but of no
+ultimate cosmic metasignificance.
+} T FAZUUL description
+
+
+FAZ1114 {[0;1;32m...The box appears to have a hinged door.  There is a pale blue force field
+around it that seems to pull the door gently closed once it has been opened.
+Otherwise, it looks to be just a plain metal box.
+} T FAZUUL description
+
+
+FAZ1115 {[0;1;32m...The ball is a small reflective silver sphere that seems to be able to roll
+around freely within the wheel when it is spun.
+} T FAZUUL description
+
+
+FAZ1116 {[0;1;32m...The gwirg is a little robot, about the size and shape of a beachball, with
+a single short antenna sticking out the top.  On its underside you can see a
+pale blue sparkling energy field of some sort, which holds it several inches
+off the ground.
+} T FAZUUL description
+
+
+FAZ1117 {[0;1;32m...The oolgorboid looks a little like an old, limp piece of broccoli, with
+several stems diverging out into a damp green crown.
+} T FAZUUL description
+
+
+FAZ1120 {[0;1;32m...The hieroglyphics consist of three basic groups, arranged left to right:
+first, a circle with rectangular bars extending outward from it on the top
+and bottom and with two little lines inside of it forming an angle; then a
+set of four arrows all pointing inward toward a central point; then a large
+black area with tiny white dots in it here and there.
+} T FAZUUL description
+
+
+FAZ1121 {[0;1;32m...The plaque has an inscription on it in what appears to be an alien
+language: BQZBJ Z EKTMFNNM NODM!
+} T FAZUUL description
+
+
+FAZ1122 {[0;1;32m...There appear to be some alien runes inscribed on the derelict spaceship:
+they appear to read "Jg ju't dpme up uif upvdi, ju xpslt jo uif hsbogbmmppo!".
+} T FAZUUL description
+
+
+FAZ1123 {[0;1;32m...Looking down into the hole, you can just barely make out what appears to be
+a huge pile of mongoos at the bottom.
+} T FAZUUL description
+
+
+FAZ1124 {[0;1;32m...The writing on the panel says:
+
+"Umflungoo: Game of the Terminally Unruly
+
+"Drop one mongoo in hole, then start yelling.  First player to yell the
+right word wins.  Each yell is matched, letter by letter, to the 'chosen'
+word, and everyone is notified of all matches.  Any number can play.
+Remember, only yelled guesses count.  Umflungoo Away!"
+} T FAZUUL description
+
+
+FAZ1125 {[0;1;32m...The cylinder has no distinguishing features to speak of.
+} T FAZUUL description
+
+
+FAZ1126 {[0;1;32m...The surface of the hemisphere has a perfectly mirrorlike finish.  Upon close
+examination, you notice a faint whirring sound coming from inside it.
+} T FAZUUL description
+
+
+FAZ1127 {[0;1;32m...Inscribed on the monolith is a little poem:
+
+     Statues come and statues go, and
+     Statues may be dumb, you know...
+     But statues always tell the truth.
+     Heed them, for eternal youth.
+
+} T FAZUUL description
+
+
+FAZ1128 {[0;1;32m...The gwamp is a large blue ring, about the size of an inner tube, with a
+perfectly smooth surface.
+} T FAZUUL description
+
+
+FAZ1129 {[0;1;32m...The slosh is a large red ring, about the size of an inner tube, with a
+perfectly smooth surface.
+} T FAZUUL description
+
+
+FAZ1130 {[0;1;32m...The tuskaloosa is a large purple ring, about the size of an inner tube,
+with a perfectly smooth surface.
+} T FAZUUL description
+
+
+FAZ1131 {[0;1;32m...The freenish is a large, intricate machine of some kind, with little tubes
+and odd jutting surfaces sticking out from it here and there.  One of the
+larger tubes protrudes out from the face of the freenish, then curves down
+and terminates in what would appear to be a spout, although there is nothing
+issuing from it at present.  You can see some sort of pale blue fluid
+circulating in many of the other tubes, but there is no way to get at it.
+} T FAZUUL description
+
+
+FAZ1132 {[0;1;32m...The freenish is a large, intricate machine of some kind, with little tubes
+and odd jutting surfaces sticking out from it here and there.  One of the
+larger tubes protrudes out from the face of the freenish, then curves down
+and terminates in what would appear to be a spout.  A steady stream of some
+sort of pale blue fluid is gushing out of the spout, but it seems to vanish
+the instant it hits the ground.
+} T FAZUUL description
+
+
+FAZ1133 {[0;1;32m...The mongooosk is a broad, squat mass of some leathery substance closely
+resembling rhinoceros hide.  It is several feet long and perhaps half that
+wide, its gently rounded profile above the ground suggesting that most of it
+is buried beneath the surface.  Its three sweenars are bobbing gently up and
+down in the jungle air.
+} T FAZUUL description
+
+
+FAZ1134 {[0;1;32m...The mongooosk's sweenars appear to be a set of black globes about the size
+of bowling balls.  Each sweenar is attached to the end of a thin, flexible
+silver shaft that allows it to swing gently back and forth, up and down, in a
+hypnotic sort of way.
+} T FAZUUL description
+
+
+FAZ1135 {[0;1;32m...The rock juts out of the ground at a narrow angle, with a crooked sort of
+offshoot of it pointing roughly in a northeasterly direction.
+} T FAZUUL description
+
+
+FAZ1136 {[0;1;32m...The ancient spaceship seems to be of conventional design, with a flattened
+spheroid-like shape coming to a sharp corner around the rim and what appears
+to have once been a hemispherical cap made of some hard transparent material.
+The top face of the ship has a set of repeated patterns inscribed around its
+surface at 30-degree intervals: each pattern looks like a collection of
+oddly-shaped bits of deep red fluff, all thrown together in a group a little
+taller than it is wide.
+} T FAZUUL description
+
+
+FAZ1138 {[0;1;32m...The oddlewokkus is an intense energy field, only three or four feet across
+but seeming to stretch into the infinite distance as you gaze into it.  Soft,
+gauzy curtains of multicolored light seem to swirl around within it, while a
+thin mist of glowing gold forms a corona over its entire exterior.
+} T FAZUUL description
+
+
+FAZ1139 {[0;1;32m...The blub is a violent, sparkling energy field, only three or four feet
+across but seeming to stretch into the infinite distance as you gaze into it.
+Sweeping curtains of multicolored light seem to swirl around within it, while
+a thin mist of glowing gold forms a corona over its entire exterior.
+} T FAZUUL description
+
+
+FAZ1140 {[0;1;32m...The nofzinger is a roaring maelstrom of nebulous energy, only three or four
+feet across but seeming to stretch into the infinite distance as you gaze into
+it.  Turbulent vortices of multicolored light seem to swarm around within it,
+while a thin mist of glowing gold forms a corona over its entire exterior.
+} T FAZUUL description
+
+
+FAZ1141 {[0;1;32m...The statue is jet black, about 20 feet tall and perhaps half that in width.
+The alien is depicted with its four under-tentacles intertwined beneath it in
+almost a braid-like pattern, and its fifth, or upper, tentacle drooping
+lazily off to the side in a contemplative sort of way.
+} T FAZUUL description
+
+
+FAZ1142 {[0;1;32m...Inscribed on the monolith are the words:
+COORDINATE 2, DIGIT 3: 9
+} T FAZUUL description
+
+
+FAZ1143 {[0;1;32m...The orb is a sphere perhaps 20 feet in diameter, with a pearly white
+translucent surface.  It has a sense of expectancy about it, as if it has
+been waiting here for you all along.
+} T FAZUUL description
+
+
+FAZ1144 {[0;1;32m...The pedestal is a squared-off section of something resembling fine granite.
+One face of the pedestal has a glyph inlaid into it in colored stone, which
+looks like a pearly white circle with a red ring inside it.
+} T FAZUUL description
+
+
+FAZ1145 {[0;1;32m...Inscribed on the monolith are the words:
+COORDINATE 1, DIGIT 2: 4
+} T FAZUUL description
+
+
+FAZ1146 {[0;1;32m...Inscribed on the monolith are the words:
+COORDINATE 3, DIGIT 1: 6
+NEXT EXIT, 49 MILES.
+} T FAZUUL description
+
+
+FAZ1147 {[0;1;32m...Inscribed on the monolith are the words:
+COORDINATE 3, DIGIT 4: 7
+} T FAZUUL description
+
+
+FAZ1148 {[0;1;32m...Inscribed on the monolith are the words:
+COORDINATE 2, DIGIT 2: 0
+} T FAZUUL description
+
+
+FAZ1149 {[0;1;32m...Inscribed on the monolith are the words:
+COORDINATE 1, DIGIT 4: 8
+} T FAZUUL description
+
+
+FAZ1150 {[0;1;32m...Inscribed on the monolith are the words:
+COORDINATE 3, DIGIT 3: 5
+} T FAZUUL description
+
+
+FAZ1151 {[0;1;32m...Inscribed on the monolith are the words:
+COORDINATE 1, DIGIT 1: 4
+} T FAZUUL description
+
+
+FAZ1152 {[0;1;32m...The platform is made of a hard, blue metal that seems to have undergone
+centuries of weathering since the time it was new, judging by the smooth,
+worn appearance of the corners.
+} T FAZUUL description
+
+
+FAZ1153 {[0;1;32m...The fluid is a thin, pale shade of blue.  It appears to be filled with
+millions of tiny bubbles that sparkle brightly in the sunlight.
+} T FAZUUL description
+
+
+FAZ1204 {[0;1;32m...The gwingus wobbles around in your hands uncertainly for a moment and then
+lies still.
+} T FAZUUL description
+
+
+FAZ1206 {[0;1;32m***
+A blue beam shoots out of the sepper, covering the east wall!  Suddenly, a
+rectangular opening in the wall appears, slowly at first, but then growing
+wider and wider until a corridor leading east is clearly visible!  The air
+becomes positively dense with the smell of ozone.
+} T FAZUUL description
+
+
+FAZ1207 {[0;1;32m***
+You see a bright blue light through the hazy curtain to the west!  The
+curtain itself starts to dissolve, leaving a clear opening connecting the
+corridor you're in with the room to the west.  The smell of ozone has become
+almost overpowering here.
+} T FAZUUL description
+
+
+FAZ1208 {[0;1;32m***
+You hear a sizzling, hissing sound from the building to the south!
+} T FAZUUL description
+
+
+FAZ1211 {[0;1;32m***
+A white beam shoots out of the palt, covering the wall!  Suddenly, the
+rectangular opening in the wall begins to disappear, slowly at first, but
+then growing dimmer and dimmer until the corridor leading east has
+completely vanished.
+} T FAZUUL description
+
+
+FAZ1212 {[0;1;32m***
+You see a bright white light to the west!  Almost immediately, a hazy
+curtain starts to form over the opening connecting you with the room to the
+west... it gets thicker and thicker until you can only barely make out the
+outlines of the room beyond.
+} T FAZUUL description
+
+
+FAZ1213 {[0;1;32m***
+You hear a sizzling, hissing sound from the building to the south!
+} T FAZUUL description
+
+
+FAZ1216 {[0;1;32m***
+Suddenly the nebbish seems to be getting warmer!
+} T FAZUUL description
+
+
+FAZ1217 {[0;1;32m***
+Suddenly the nebbish seems to be getting cooler!
+} T FAZUUL description
+
+
+FAZ1219 {[0;1;32m...You seem to feel a sense of finality setting in, as though some irreversible
+process has just been set in motion.
+} T FAZUUL description
+
+
+FAZ1220 {[0;1;32m...It seems to suddenly whirl around your body and land back in your hands!
+(but it is difficult to be sure...)
+} T FAZUUL description
+
+
+FAZ1225 {[0;1;32m***
+Suddenly the gwirg lifts you up off the floor and begins taking you higher and
+higher up into the black tower... above you you see something glowing bright
+gold, growing nearer, and nearer...
+} T FAZUUL description
+
+
+FAZ1226 {[0;1;32m***
+Suddenly you find yourself sinking down into the floor, then dropping down,
+down, down.  Far below you see the patch of light at the entry to the tower
+growing nearer, and nearer...
+} T FAZUUL description
+
+
+FAZ1227 {[0;1;32m***
+Suddenly the gwirg begins to move upward momentarily but stops abruptly as
+though changing its mind and then lays still.
+} T FAZUUL description
+
+
+FAZ1230 {[0;1;32m...You suddenly hear a great rushing sound all around you, as a thin vertical
+line of deep red fire appears in the air a few feet away!  Your rebozo suddenly
+begins to ooze into your fingers, filling your body with scintillating energy,
+as the line of red fire gets brighter and brighter, gradually broadening out to
+become a wide column of red fire.  The column begins to move toward you, and
+suddenly you are sucked into it!  The roaring in your ears rushes up to a
+crescendo and then dies away, as your vision slowly clears...
+} T FAZUUL description
+
+
+FAZ1231 {[0;1;32m***
+You suddenly hear a great rushing sound all around you, as a thin vertical line
+of deep red fire appears in the air a few feet away!  The red becomes deeper
+and deeper as the line gets brighter and brighter, gradually broadening out to
+become a wide column of red fire!  Then the column begins to move toward } T FAZUUL description
+
+
+FAZ1232 {[0;1;32m***
+You hear a great rushing sound nearby!
+} T FAZUUL description
+
+
+FAZ1233 {[0;1;32m***
+The column slowly contracts to a fine, bright red line again, and disappears.
+} T FAZUUL description
+
+
+FAZ1234 {[0;1;32m***
+You suddenly hear a great rushing sound all around you, as a thin vertical line
+of deep red fire appears in the air a few feet away!  The red becomes deeper
+and deeper as the line gets brighter and brighter, gradually broadening out to
+become a wide column of red fire!
+} T FAZUUL description
+
+
+FAZ1235 {[0;1;32m***
+The column slowly contracts to a fine, bright red line again, and disappears.
+} T FAZUUL description
+
+
+FAZ1236 {[0;1;32m...Your rebozo makes a soft whimpering sound!
+} T FAZUUL description
+
+
+FAZ1237 {[0;1;32m...Your rebozo begins to feel hot!  Soon it is almost too hot to hold!  Then
+suddenly it seems to reset itself, and begins to cool off again.
+} T FAZUUL description
+
+
+FAZ1238 {[0;1;32m***
+The dweezle suddenly flashes brightly with light of a strange, indefinable
+color!
+} T FAZUUL description
+
+
+FAZ1239 {[0;1;32m...The dweezle suddenly flashes brightly with light of a strange, indefinable
+color!
+} T FAZUUL description
+
+
+FAZ1240 {[0;1;32m***
+You suddenly feel a strange yet somehow familiar presence beside you, behind
+you, all around you!  Then the feeling fades away...
+} T FAZUUL description
+
+
+FAZ1241 {[0;1;32m...Your noodle hums suddenly, and you feel reality begin to fade away as another
+world forms around you } T FAZUUL description
+
+
+FAZ1242 {[0;1;32m.. Reality fades away again and then re-forms, and you are back where you were.
+} T FAZUUL description
+
+
+FAZ1243 {[0;1;32m***
+You feel an intense wave of heat for the blink of an eye, as your fashnork
+suddenly flashes bright red and then vanishes in a soundless explosion!  A
+faint smell of burnt insulation is all it leaves behind.
+} T FAZUUL description
+
+
+FAZ1244 {[0;1;32m***
+You feel an intense wave of heat for the blink of an eye, as something nearby
+suddenly flashes bright red and then vanishes in a soundless explosion!  You
+catch a faint smell of burnt insulation in the air.
+} T FAZUUL description
+
+
+FAZ1245 {[0;1;32m...The fashnork suddenly sends eerie vibrations through your entire being and
+you begin to notice your body and all your holdings becoming transparent!
+Soon you have become completely invisible, although you can still tell what
+you are holding by touch.
+} T FAZUUL description
+
+
+FAZ1246 {[0;1;32m...You feel suddenly warm, as a strange shimmering appears in the air beneath
+your eyes!  Gradually a body takes form around you, and upon examination you
+find it to be your own!  You have become fully visible once again.
+} T FAZUUL description
+
+
+FAZ1247 {[0;1;32m is suddenly turning transparent, more and more, until at last he has
+become completely invisible!
+} T FAZUUL description
+
+
+FAZ1248 {[0;1;32m***
+A strange shimmering starts up in the air a few feet away, becoming more and
+more solid until at last } T FAZUUL description
+
+
+FAZ1249 {[0;1;32m***
+Your fracas suddenly hums madly for a moment!
+} T FAZUUL description
+
+
+FAZ1250 {[0;1;32m***
+A giant steel claw suddenly shoots out of the babbalisk toward } T FAZUUL description
+
+
+FAZ1251 {[0;1;32m but the quahog instantly shines a strange purple ray at it!  The claw
+writhes around in the air as if in agony, then abruptly retracts back into
+the babbalisk!
+} T FAZUUL description
+
+
+FAZ1252 {[0;1;32m***
+A giant steel claw suddenly shoots out of } T FAZUUL description
+
+
+FAZ1253 {[0;1;32m's babbalisk toward you, but your quahog instantly shines a strange
+purple ray at it!  The claw writhes around in the air as if in agony, then
+abruptly retracts back into the babbalisk!
+} T FAZUUL description
+
+
+FAZ1254 {[0;1;32m***
+A giant steel claw suddenly shoots out of } T FAZUUL description
+
+
+FAZ1255 {[0;1;32m's babbalisk, but } T FAZUUL description
+
+
+FAZ1256 {[0;1;32m's quahog instantly shines a strange purple ray at it!  The claw
+writhes around in the air as if in agony, then abruptly retracts back
+into the babbalisk!
+} T FAZUUL description
+
+
+FAZ1257 {[0;1;32m***
+A giant steel claw suddenly shoots out of your babbalisk, thrusts about
+briefly, and then abruptly retracts back into the babbalisk!
+} T FAZUUL description
+
+
+FAZ1258 {[0;1;32m***
+A giant steel claw suddenly shoots out of } T FAZUUL description
+
+
+FAZ1259 {[0;1;32m's babbalisk, thrusts about briefly, and then retracts back into
+the babbalisk!
+} T FAZUUL description
+
+
+FAZ1260 {[0;1;32m***
+A giant steel claw suddenly shoots out of your babbalisk and grabs } T FAZUUL description
+
+
+FAZ1261 {[0;1;32m!  Then the claw abruptly retracts back into the babbalisk,
+leaving the } T FAZUUL description
+
+
+FAZ1262 {[0;1;32m***
+A giant steel claw suddenly shoots out of } T FAZUUL description
+
+
+FAZ1263 {[0;1;32m's babbalisk, and grabs your } T FAZUUL description
+
+
+FAZ1264 {[0;1;32m!  Then the claw abruptly retracts back into the babbalisk,
+leaving the } T FAZUUL description
+
+
+FAZ1265 {[0;1;32m***
+A giant steel claw suddenly shoots out of } T FAZUUL description
+
+
+FAZ1266 {[0;1;32m's babbalisk, and grabs } T FAZUUL description
+
+
+FAZ1267 {[0;1;32m!  Then the claw abruptly retracts back into the babbalisk,
+leaving the } T FAZUUL description
+
+
+FAZ1300 {[0;1;32m...You sense the snuge sending you a telepathic message: "Attach me to a
+wigglesnort!  Attach me to a wigglesnort!"
+} T FAZUUL description
+
+
+FAZ1301 {[0;1;32m***
+The bilge suddenly breaks out with some sort of recorded message: "Protect your
+belongings!  Avoid worry!  Forget about theft!  Buy the X-gazax-bits factory-
+guaranteed FELAFEL today!"
+} T FAZUUL description
+
+
+FAZ1302 {[0;1;32m...The bork begins sending images into your mind of a dark subterranean
+corridor, a set of glowing coils, a large hopper, and a control panel...
+somehow the number 4 becomes imprinted on your brain.
+} T FAZUUL description
+
+
+FAZ1303 {[0;1;32m...You sense the rhubarb transmitting alien, alien thought patterns that are
+almost impossible to decipher... about all you seem to be able to pick up is
+something about a room with chromium plated walls, high, high up in a jet-black
+tower...
+} T FAZUUL description
+
+
+FAZ1304 {[0;1;32m***
+The moolkoo suddenly yells: "Look out, Jim, the grinfrazzitz is starting up
+again!  It's -- look out!  It's -- aaaaaaaaaaaaaaakccckkckkcckkk!"
+} T FAZUUL description
+
+
+FAZ1305 {[0;1;32m...A little readout in the kwish you hadn't noticed before lights up all
+of a sudden.  You watch as a strange stream of digits slowly parades past on
+the readout: 84 85 66 85 86 70 84 44 78 80 79 80 77 74 85 73 84 62 72 66 77 66
+89 70 79 85 70 83...
+} T FAZUUL description
+
+
+FAZ1306 {[0;1;32m...Suddenly a little cable shoots out of the side of the rommus and attaches
+itself to your ear!  You begin to hear a little voice through the wire saying,
+"Help!"  Suddenly the little cable retracts back into the rommus.
+} T FAZUUL description
+
+
+FAZ1307 {[0;1;32m***
+The ruckus suddenly emits a series of tones and then says:
+"Where there's a will, there's inheritance tax!"
+} T FAZUUL description
+
+
+FAZ1308 {[0;1;32m...The bundle suddenly begins beaming thoughts at you... First, an image of a
+curved surface with millions of tiny lights embedded in it; then, a set of
+four lights in a control console; then, a single one of the four lights, which
+suddenly lights up!
+} T FAZUUL description
+
+
+FAZ1309 {[0;1;32m...The quorum seems to suddenly expand and expand, until it is all around you
+and you are inside it!  A strange pale blue light surrounds you, and suddenly
+you hear a voice that seems to come from all directions at once: "Does your
+voice not project as far as you would like?  Are your friends always out of
+earshot when you need them?  Consider investing in the Klong-Frenetix DONGLE,
+the subspace-powered, ion-free voice projection device with the exclusive
+Autoseek feature!  Buy one this month only, and Klong-Frenetix will include a
+flatspace Automute bubble for free!"  The pale blue light then coalesces back
+into the quorum, leaving you standing as before.
+} T FAZUUL description
+
+
+FAZ1310 {[0;1;32m***
+The wapple suddenly glows a deep purple, and you hear a strange whooshing and
+whirring that gradually builds up from the edge of hearing until it begins to
+sound almost like music.  A thin, wailing voice now becomes audible, singing:
+
+     South from mesa fiven walks,
+     Stumble I to rising sun,
+     Then to find the Orb That Talks,
+     South but one, and one, and one.
+
+The singing dies away softly on the word "one".
+} T FAZUUL description
+
+
+FAZ1311 {[0;1;32m...Your mind feels suddenly burst open, as if an ethereal scalpel had just
+passed directly through your skull!  You feel an alien presence probing around
+in your brain... thrusting here... poking there...  You catch little wisps of
+thought from the presence: "where are they from?"... "do they know about the
+noodle and the drivel?"... "have they found the metastatic transfer chamber
+yet?"... "what color are the sparks?"... "is --" -- suddenly the thoughts are
+interrupted and you feel the presence depart as control of your brain is
+restored to you.
+} T FAZUUL description
+
+
+FAZ1312 {[0;1;32m...Suddenly you feel suspended in a vast black void with tiny points of light
+embedded in it above you, under you, all around you.  A ring of bright red
+light suddenly appears to encircle you and then shoot away from you at enormous
+speed, receding into the distance until it surrounds only a single one of the
+points of light.  A soundless explosion throughout your body seems to say:
+CCOFFOGGNNORRAA!  Now a blue ring of light encircles you and shoots away in a
+different direction, receding to pinpoint another star, and you feel yourself
+resonate to the word: GGALLAXXENNTTERR!  Then, a purple ring shoots away in a
+third direction, with the word: FFARRSSHHONN!  Then, you feel support beneath
+your feet return as reality coalesces around you.
+} T FAZUUL description
+
+
+FAZ1313 {[0;1;32m...You feel a strange sensation in your head, as though something were trying
+to warn you of danger!  A hazy image fights its way into your mind, a sort of
+cylinder, with a cube of some indistinct material attached to one end.  Then a
+sort of silvery sphere with an antenna on top jumps out at you, with a giant
+open mouth!  You feel a moment of sheer terror, and then the vision subsides.
+} T FAZUUL description
+
+
+FAZ1314 {[0;1;32m...You sense the noodle beaming a vague mix of impressions at you of many
+different scenes, most of them strangely familiar, but no single impression is
+distinct enough for you to tell what it is.
+} T FAZUUL description
+
+
+FAZ1317 {[0;1;32m...You begin to feel a sense of dreamy peace, as though floating out above the
+desert on a soft blue cloud... looking down, you see the city, and off to the
+southwest of it a diagonal row of four giant statues... then you notice a
+peculiar hidden trail in the desert, leading west from the statues a few
+miles... lazily following the trail with your eyes, you see it turn north for
+about twice as far as it went west, and then turn west again... and then
+perhaps north, or possibly east, or somewhere, who cares, it is all so restful
+here... the scene clears and you are back where you were, feeling considerably
+refreshed.
+} T FAZUUL description
+
+
+FAZ1318 {[0;1;32m...The snaack suddenly begins sending out tiny vibrations that you seem to hear
+more with your bones than with your ears:
+
+    "North to dune is known to all,
+     West to rune is where some fall,
+     West again by two is where
+     Those who then face north may dare
+     Step two! And if they then step forth
+     East five, and then go wand'ring north
+     For three, too, one thing they must know
+     Is which way after this to go."
+} T FAZUUL description
+
+
+FAZ1319 {[0;1;32m***
+The cacapoo explodes into millions of tiny points of light!  The air is
+suddenly filled with them as they flutter about, seeming to seek positions in
+the air, and as their light grows fainter, they seem to come together to form
+two figures in the air, one of them a transparent cube with a hole in the
+center, and the other a set of three spherical lobes of some kind.  Then the
+glow of the lights grows dimmer and goes out, leaving only empty air behind.
+} T FAZUUL description
+
+
+FAZ1350 {[0;1;32m...Suddenly the orb seems to swirl and glow, and the image of a powerful column
+of red fire appears inside it!  Then a deep, droning voice solemnly intones:
+
+     A thousand years I've waited
+     I'll wait a thousand more
+     Rebozo's sweet caress, you know
+     Is power, to the core.
+} T FAZUUL description
+
+
+FAZ1351 {[0;1;32m***
+You suddenly feel a sense of vertigo as the world around you seems to swirl and
+tumble in a panoramic alien image superimposed on reality: you see molecules
+being ripped apart as tiny white wavicles of anti-matter penetrate into their
+innermost recesses; then, you seem to fly back at enormous speed as your field
+of view enlarges to show a large rectangular opening in a wall, with tiny wisps
+of vapor drifting in the air and slowly disappearing; then the image fades
+away...
+} T FAZUUL description
+
+
+FAZ1352 {[0;1;32m***
+You suddenly feel a sense of vertigo as the world around you seems to swirl and
+tumble in a panoramic alien image superimposed on reality: you see giant
+transparent cubes tumbling through space, with entire planetary systems and
+nebulae flashing through them like giant sparks!  Then the image fades and you
+are back in everyday reality...
+} T FAZUUL description
+
+
+FAZ1353 {[0;1;32m***
+You suddenly feel a sense of vertigo as the world around you seems to swirl and
+tumble in a panoramic alien image superimposed on reality: you see the cubes
+tumbling through space again, and a set of aliens inside the cubes going
+through a series of strange motions, almost like a dance, as the cubes change
+color abruptly in a crazy-quilt of patterns!  Then the image fades as your
+sense of reality re-establishes itself...
+} T FAZUUL description
+
+
+FAZ1354 {[0;1;32m***
+You suddenly feel a sense of vertigo as the world around you seems to swirl and
+tumble in a panoramic alien image superimposed on reality: you flash back to
+aliens in cubes!  The cubes change color again and again as the nebulae flash
+through them -- and suddenly, as all the cubes change to blue, a vast blue
+glowing field of some kind balloons out from the cubes and begins drawing
+energy from the stars!
+} T FAZUUL description
+
+
+FAZ1500 {[0;1;32m***
+The room darkens, and you hear an eerie whistling sound as the ysmaric
+foon-ball appears!
+} T FAZUUL description
+
+
+FAZ1501 {[0;1;32m***
+There is a bright flash of light, and suddenly the winner's name appears
+in deep orange, holographically projected all across the ceiling:
+
+     } T FAZUUL description
+
+
+FAZ1502 {[0;1;32m is the winner!
+
+Then the room lights come up to normal brightness again.
+} T FAZUUL description
+
+
+FAZ1503 {[0;1;32m***
+You hear a loud, objectionable sound, like a honking wheeze.  Then a little
+light just above the slot comes on, blinking: "} T FAZUUL description
+
+
+FAZ1504 {[0;1;32m blew it!"  Slowly, the
+room lights return to normal brightness again.
+} T FAZUUL description
+
+
+FAZ1505 {[0;1;32m***
+Suddenly the foon-ball vanishes!  A little light comes on over the slot,
+blinking: "Tie game!"  Then the room lights slowly come up to normal
+brightness again.
+} T FAZUUL description
+
+
+FAZ1506 {[0;1;32m
+...You have entered the Foon-Ball Emporium.  The room lights are darkened,
+causing the seven holographically-shaded regions of the playfield to stand out
+in stark relief against the ceiling.  A game is in progress, and the ysmaric
+foon-ball is in motion!} T FAZUUL description
+
+
+FAZ1507 {[0;1;32m***
+Suddenly three crackers pour out of the slot into your hands!
+} T FAZUUL description
+
+
+FAZ1508 {[0;1;32m***
+Suddenly you see three crackers pour out of the slot, into } T FAZUUL description
+
+
+FAZ1509 {[0;1;32m***
+Suddenly you hear a great grinding noise coming from the slot!
+} T FAZUUL description
+
+
+FAZ1510 {[0;1;32m***
+Suddenly the west wall lights up bright white as the game begins!
+} T FAZUUL description
+
+
+FAZ1511 {[0;1;32m...You're in the Hall of Umflungoo, an auditorium-sized room with Umflungoo
+banners hanging from the rafters.  There is a large circular hole in the middle
+of the floor; portals lead out of the hall to the north and south.  The west
+wall is brightly lit -- apparently a game is in progress!} T FAZUUL description
+
+
+FAZ1512 {[0;1;32m***
+You hear a blast of escaping air from the direction of the hole, and a message
+appears in dancing blue letters on the west wall: "No winner this time.  The
+word was '} T FAZUUL description
+
+
+FAZ1513 {[0;1;32m'".  Then the lettering fades away.
+} T FAZUUL description
+
+
+FAZ1514 {[0;1;32m***
+You hear a giant shriek as the whole room lights up bright orange and the
+entire west wall is covered over with the word } T FAZUUL description
+
+
+FAZ1515 {[0;1;32m!  Suddenly, to the accompaniment of trumpets, you see } T FAZUUL description
+
+
+FAZ1516 {[0;1;32m written all over the walls, floor, and ceiling, in four foot
+high purple letters!  Then the lettering fades away as the lights
+return to normal.
+} T FAZUUL description
+
+
+FAZ1517 {[0;1;32m***
+Suddenly the west wall lights up in bright gold with the letters:
+} T FAZUUL description
+
+
+FAZ1525 {[0;1;32m***
+Suddenly the osmotic belches loudly, emits a booming roar, and bellows: "I
+WANNA } T FAZUUL description
+
+
+FAZ1526 {[0;1;32m...You're standing on a broad covered walkway running north and south between
+the gate to the jungle to the north and a strange small building to the south.
+The words "OSMOTIC IN USE" appear to be floating in space just above the
+entrance to the building.  Also, there is a crooked little pathway leading off
+to the west.} T FAZUUL description
+
+
+FAZ1527 {[0;1;32m***
+You hear a booming roar coming from the strange little building to the south!
+} T FAZUUL description
+
+
+FAZ1528 {[0;1;32m***
+You hear a booming roar from the west!
+} T FAZUUL description
+
+
+FAZ1529 {[0;1;32m***
+The osmotic emits a crashing, ear-splitting roar, and then thunders: "I HAVE
+BEEN SATISFIED! } T FAZUUL description
+
+
+FAZ1530 {[0;1;32m SHALL HAVE THE ZLEEN!"
+} T FAZUUL description
+
+
+FAZ1531 {[0;1;32m***
+The osmotic suddenly makes a strange grinding sound, shudders, and then goes
+silent.  You seem to hear a faint voice inside go "Bleah! } T FAZUUL description
+
+
+FAZ1532 {[0;1;32m sucks!" (but it is difficult to tell for sure).
+} T FAZUUL description
+
+
+FAZ1533 {[0;1;32m***
+The osmotic suddenly roars out: "I WANNA } T FAZUUL description
+
+
+FAZ1534 {[0;1;32m***
+Suddenly the osmotic shudders and makes a strange sighing sound, as though
+becoming resigned to its fate.
+} T FAZUUL description
+
+
+FAZ1535 {[0;1;32m***
+Suddenly the osmotic emits a deafening roar, and bellows: "HOW".
+} T FAZUUL description
+
+
+FAZ1536 {[0;1;32m***
+The osmotic suddenly roars out: "HOW??  RACE TO SATISFY THE OSMOTIC!!  FEED ANY
+OBJECT INTO THE OSMOTIC AND IT WILL ASK FOR ANOTHER, AT RANDOM, BASED ON THE
+LEVEL OF THE OBJECT FED!!  THE FIRST PLAYER TO CREATE THE STATED OBJECT AND
+FEED IT TO THE OSMOTIC SHALL BE ENTITLED TO A ZLEEN!!  RACE, RACE TO SATISFY
+THE OSMOTIC!!
+} T FAZUUL description
+
+
+FAZ1540 {[0;1;32m***
+Suddenly the little gwirg whirrs for a moment and then chirps out:
+"This way to the oolgorboid!!"
+***
+The gwirg suddenly scurries away to the } T FAZUUL description
+
+
+FAZ1541 {[0;1;32m***
+A little gwirg suddenly scurries up to you from the } T FAZUUL description
+
+
+FAZ1542 {[0;1;32m***
+Suddenly a remarkable little gwirg floats down out of the sky and begins
+whirring breathlessly around your feet!
+} T FAZUUL description
+
+
+FAZ1544 {[0;1;32m...You're in the middle of a dense tropical forest.  Overhead, the jungle
+canopy filters out all but a few flickering rays of blue sunlight, and, except
+for the oolgorboid lying off to the side, the jungle surrounds you to the
+north, south, east, and west as far as the eye can see.} T FAZUUL description
+
+
+FAZ1545 {[0;1;32m***
+Suddenly the gwirg whirls around, snarls, and jumps into your hands!
+***
+The gwirg just ate your quilbert!
+} T FAZUUL description
+
+
+FAZ1546 {[0;1;32m***
+Suddenly the gwirg whirls around, snarls, and jumps into } T FAZUUL description
+
+
+FAZ1550 {[0;1;32m***
+Suddenly the earth begins to tremble and shake!
+***
+A deep, resounding voice fills the room:
+
+  "WHAT ZLEEN IS THIS WHO DARES ATTEMPT THE INFINITE LOOP?
+   A POX UPON THEE, ZLEEN!"
+} T FAZUUL description
+
+
+FAZ1551 {[0;1;32m***
+You suddenly feel the earth tremble and shake beneath your feet!
+} T FAZUUL description
+
+
+FAZ1552 {[0;1;32m***
+Suddenly you begin to feel very light and airy!  The light in the hall becomes
+bright, brighter -- intensely bright as you feel yourself floating up off the
+floor.  Then suddenly, you are sucked into the chute!
+***
+You are totally disoriented as you feel the molecules of your zleen
+intermingling with, merging with your own... you hear a fizzing, popping sound
+as you are deposited on the floor beside the smooth purple spheroid.  You are
+your zleen!
+} T FAZUUL description
+
+
+FAZ1553 {[0;1;32m suddenly looks thunderstruck -- floats up off the floor for a
+moment -- and then gets sucked into the chute!
+***
+A giant shimmering zleen-form suddenly materializes in the air a few feet away!
+Gradually it becomes substantial, sizzling and popping briefly as it merges
+with your plane of existence... and then you recognize it.  It is} T FAZUUL description
+
+
+FAZ1600 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1601 {[0;1;32m is a fairly typical-looking lady -- somewhat taller than average,
+and a little on the thin side.  She} T FAZUUL description
+
+
+FAZ1602 {[0;1;32m is a fairly typical-looking lady -- somewhat shorter than average,
+and a little on the thin side.  She} T FAZUUL description
+
+
+FAZ1603 {[0;1;32m is a fairly typical-looking lady -- somewhat taller than average,
+and a little on the heavy side.  She} T FAZUUL description
+
+
+FAZ1604 {[0;1;32m is a fairly typical-looking lady -- somewhat shorter than average,
+and a little on the heavy side.  She} T FAZUUL description
+
+
+FAZ1605 {[0;1;32m is a fairly typical-looking lady -- an older woman, just beginning
+to grey on top.  She} T FAZUUL description
+
+
+FAZ1606 {[0;1;32m is a dapper, well-groomed woman, with a somewhat shifty look to her
+blue eyes.  She} T FAZUUL description
+
+
+FAZ1607 {[0;1;32m is a dapper, well-groomed woman, with a somewhat shifty look to her
+grey eyes.  She} T FAZUUL description
+
+
+FAZ1608 {[0;1;32m is a dapper, well-groomed woman, with a somewhat shifty look to her
+brown eyes.  She} T FAZUUL description
+
+
+FAZ1609 {[0;1;32m is a dapper, well-groomed woman, with a somewhat shifty look to her
+green eyes.  She} T FAZUUL description
+
+
+FAZ1610 {[0;1;32m is a philosophical-looking sort, with greying eyebrows.  She is wearing
+green army fatigues smudged with dirt.  She} T FAZUUL description
+
+
+FAZ1611 {[0;1;32m is a philosophical-looking sort, with greying eyebrows.  She is wearing
+a pair of grey overalls and army boots.  She} T FAZUUL description
+
+
+FAZ1612 {[0;1;32m is a saucy-looking sort, with long blonde hair.  She is wearing
+a tan, and little else.  She} T FAZUUL description
+
+
+FAZ1613 {[0;1;32m is a beautiful young woman in a nurse's uniform.  She} T FAZUUL description
+
+
+FAZ1614 {[0;1;32m is a beautiful young woman in a Klezedic's uniform.  Unfortunately,
+she has a long, bushy handlebar mustache.  She} T FAZUUL description
+
+
+FAZ1615 {[0;1;32m is a beautiful young woman who appears to be masquerading as Joan
+of Arc.  She} T FAZUUL description
+
+
+FAZ1616 {[0;1;32m is an odd-looking sort, about five feet tall, with bushy purple eyebrows
+jutting out of a round, domed forehead.  Her left nostril seems to be painted
+blue.  She} T FAZUUL description
+
+
+FAZ1617 {[0;1;32m is an odd-looking sort, about five foot seven, with bushy green eyebrows
+jutting out of a round, domed forehead.  Her right nostril seems to be painted
+blue.  She} T FAZUUL description
+
+
+FAZ1618 {[0;1;32m is an odd-looking sort, about six feet tall, with bushy orange eyebrows
+jutting out of a round, domed forehead.  Her left nostril seems to be painted
+silver.  She} T FAZUUL description
+
+
+FAZ1619 {[0;1;32m is an odd-looking sort, about five foot four, with bushy blue eyebrows
+jutting out of a round, domed forehead.  Her right nostril seems to be dilated
+and is dripping heavily.  She} T FAZUUL description
+
+
+FAZ1620 {[0;1;32m is a flamboyantly dressed woman, with short, squat antennae extending
+upwards from her hairline about three inches.  She} T FAZUUL description
+
+
+FAZ1621 {[0;1;32m is a flamboyantly dressed woman, with long, sleek antennae extending
+upwards from her hairline about a foot.  She} T FAZUUL description
+
+
+FAZ1622 {[0;1;32m is a harmless-looking type, quite curvilinear actually, with pale
+lavender skin.  She} T FAZUUL description
+
+
+FAZ1623 {[0;1;32m is a harmless-looking type, quite curvilinear actually, with bright
+red skin.  She} T FAZUUL description
+
+
+FAZ1624 {[0;1;32m is a harmless-looking type, a little overweight, with pale
+green skin.  She has an honest face.  She} T FAZUUL description
+
+
+FAZ1625 {[0;1;32m is a friendly-looking sort, with a perpetual half-smile on her face.  You
+get the feeling that she might need money.  She} T FAZUUL description
+
+
+FAZ1626 {[0;1;32m is the strange, dwarf-growing type.  She has four pet parrots: one on
+her head, one on each shoulder, and one perched on the toe of her left shoe.  She} T FAZUUL description
+
+
+FAZ1627 {[0;1;32m looks like the femme fatale type.  She has a black patch over her
+left eye, and has long, greasy black hair.  She} T FAZUUL description
+
+
+FAZ1628 {[0;1;32m looks like the femme fatale type.  She has a black patch over her
+right eye, and has long, greasy blond hair.  She} T FAZUUL description
+
+
+FAZ1629 {[0;1;32m looks like the femme fatale type.  She has a black patch over her
+left eye, and has short, greasy black hair.  She} T FAZUUL description
+
+
+FAZ1630 {[0;1;32m looks like the femme fatale type.  She has a black patch over her
+right eye, and has short, greasy blond hair.  She} T FAZUUL description
+
+
+FAZ1631 {[0;1;32m looks rather strange.  Her teeth project out over her lower lip to a
+length of two or three inches, and have little tufts of reddish hair at the
+end.  Short jets of purple smoke shoot out of her ears from time to time.  She} T FAZUUL description
+
+
+FAZ1632 {[0;1;32m looks rather strange.  Her teeth project out over her lower lip to a
+length of two or three inches, and have little tufts of bluish hair at the
+end.  Short jets of orange smoke shoot out of her ears from time to time.  She} T FAZUUL description
+
+
+FAZ1633 {[0;1;32m looks rather strange.  Her teeth project out over her lower lip to a
+length of two or three inches, and have little tufts of gold hair at the
+end.  Short jets of what appears to be steam shoot out of her ears from time
+to time.  She} T FAZUUL description
+
+
+FAZ1634 {[0;1;32m is constantly smiling about in all directions as you watch.  Her face
+seems to exhibit a nervous twitch that makes her appear to be winking at
+everyone around you, as though sharing some private joke.  She} T FAZUUL description
+
+
+FAZ1635 {[0;1;32m is about three feet tall, and has enormous feet, which at the moment
+are encased in equally enormous shiny black shoes.  You sense the faint smell
+of Dr. Scholl's emanating from her general direction.  She} T FAZUUL description
+
+
+FAZ1636 {[0;1;32m looks as though she has recently been to a costume party.  She is dressed
+as a prehistoric city-dweller, with a "dress", and "stockings" on her legs
+(these were thin nylon tubes which fully enclosed the legs -- the theory was
+that the nylon would instantly run, thereby encouraging males to privately
+speculate as to just how far the run extended).  She} T FAZUUL description
+
+
+FAZ1637 {[0;1;32m is surrounded by a faintly glowing aura of leashed energy.  She is about
+seven feet tall, dark-haired, with what appears to be an old fencing scar on her
+left cheek.  She} T FAZUUL description
+
+
+FAZ1638 {[0;1;32m is surrounded by a faintly glowing aura of leashed energy.  She is about
+eight feet tall, dark-haired, with what appears to be the scar of an old
+bullet wound on her left cheek.  She} T FAZUUL description
+
+
+FAZ1639 {[0;1;32m is surrounded by a faintly glowing aura of leashed energy.  She is about
+six feet tall, light-haired, with what appears to be an old fishing scar on her
+right cheek.  She} T FAZUUL description
+
+
+FAZ1640 {[0;1;32m looks like the impatient sort.  Her sweaty face is a dark shade of
+purple, and she seems to be tapping one foot on the ground so fast that you
+can barely see it.  She} T FAZUUL description
+
+
+FAZ1641 {[0;1;32m is a sharp-nosed, inquisitive-looking type, about five and a half feet
+tall, with dark, oily hair.  You cannot help wondering if she would like to
+give you some crackers.  She} T FAZUUL description
+
+
+FAZ1642 {[0;1;32m is a sharp-nosed, inquisitive-looking type, about five and a half feet
+tall, with dark, oily hair.  You cannot help wondering if she has a father-in-law
+named Ferd.  She} T FAZUUL description
+
+
+FAZ1643 {[0;1;32m is a sharp-nosed, inquisitive-looking type, about five and a half feet
+tall, with dark, oily hair.  You cannot help wondering if she has a nebbish
+hidden away somewhere.  She} T FAZUUL description
+
+
+FAZ1644 {[0;1;32m is a sharp-nosed, inquisitive-looking type, about five and a half feet
+tall, with dark, oily hair.  You cannot help wondering if she is working on
+a novel in her spare time.  She} T FAZUUL description
+
+
+FAZ1645 {[0;1;32m has become a small bread-basket, with a shelf-life of several weeks.
+A small sign over her head blinks repeatedly: "Fish No More".  She} T FAZUUL description
+
+
+FAZ1646 {[0;1;32m is apparently undergoing a metamorphosis from the form of a
+hippopotamus to that of a buttercup.  A soft wheezing sound emits from her left
+armpit/leaf-structure, a portion of her anatomy you decide you would just as
+soon not investigate further.  She} T FAZUUL description
+
+
+FAZ1647 {[0;1;32m is wearing a name-badge identifying herself as an Inspector of
+Unspecified Proportionalities, but you notice that the green headdress normally
+accorded such functionaries is conspicuously missing.  She} T FAZUUL description
+
+
+FAZ1648 {[0;1;32m has become almost uniformly orange, but you notice a small mole just
+beneath her left ear that seems to be blinking on and off in a shade of
+pale yellow.  She} T FAZUUL description
+
+
+FAZ1649 {[0;1;32m is surrounded by a cloud of small, gnat-like creatures, all singing
+in unison, "When the Saints Come Marching In".  She seems to be enjoying
+the music, as far as you can tell.  She} T FAZUUL description
+
+
+FAZ1650 {[0;1;32m has the look of a furtive desperado about her, but you feel certain
+that her mother loves her.  Looking closely, you notice a small tear forming
+in the corner of her right eye.  She} T FAZUUL description
+
+
+FAZ1651 {[0;1;32m is apparently masquerading as the Duchess of Wales, but the raccoon
+nesting in her left ear is a dead giveaway.  She is trying to combat the smell
+of the dead raccoon with Eau de Vivre, but to no avail.  She} T FAZUUL description
+
+
+FAZ1652 {[0;1;32m has a serious case of Uncorgling's Disease, which makes her seem much
+less unpopular than she actually is.  A spare set of kelp bladders is dangling
+on a chain from her belt.  She} T FAZUUL description
+
+
+FAZ1653 {[0;1;32m has the look of a woman plotting the overthrow of the galaxy.
+Unfortunately, she cannot seem to escape the holographic image of the small
+backyard rotisserie that follows her around, sometimes in front, sometimes
+behind.  She} T FAZUUL description
+
+
+FAZ1654 {[0;1;32m has a distracted look about her, as though torn between a desire to
+discover new life, new civilizations, and a desire to eat some fresh
+marmalade.  Why she supposes these are mutually exclusive, you cannot tell.  She} T FAZUUL description
+
+
+FAZ1655 {[0;1;32m appears to be wearing a special projector that makes her nose seem
+several times its actual size.  However, the small radar dome on her head
+forces you to conclude that she works for the military.  She} T FAZUUL description
+
+
+FAZ1656 {[0;1;32m is appropriately attired for the occasion in a high-necked, stiff
+white collar and blue velvet bellbottoms.  You seem to recall having seen
+her before on one of those tri-D newscasts.  She} T FAZUUL description
+
+
+FAZ1657 {[0;1;32m has evidently gotten fed up with feeding the rabbits all the time,
+since she has no grass pellets anywhere on her person.  However, looking closely,
+you notice the telltale chlorophyll stains on the thumb and forefinger
+of her left hand.  She} T FAZUUL description
+
+
+FAZ1658 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1659 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1660 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1661 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1662 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1663 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1664 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1665 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1666 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1667 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1668 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1669 {[0;1;32m is a plain-looking girl, with a sweet smile.  She} T FAZUUL description
+
+
+FAZ1699 {[0;1;32m is a small round furry creature with big beady eyes, a cute little
+black nose, and great white whiskers.  It does not appear to have any legs, but
+it is able to wiggle all around in a rubbery sort of way.  It} T FAZUUL description
+
+
+FAZ1700 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1701 {[0;1;32m is a fairly typical-looking specimen -- somewhat taller than average,
+and a little on the thin side.  He} T FAZUUL description
+
+
+FAZ1702 {[0;1;32m is a fairly typical-looking specimen -- somewhat shorter than average,
+and a little on the thin side.  He} T FAZUUL description
+
+
+FAZ1703 {[0;1;32m is a fairly typical-looking specimen -- somewhat taller than average,
+and a little on the heavy side.  He} T FAZUUL description
+
+
+FAZ1704 {[0;1;32m is a fairly typical-looking specimen -- somewhat shorter than average,
+and a little on the heavy side.  He} T FAZUUL description
+
+
+FAZ1705 {[0;1;32m is a fairly typical-looking specimen -- an older fellow, somewhat grey
+around the temples.  He} T FAZUUL description
+
+
+FAZ1706 {[0;1;32m is a dapper, well-groomed fellow, with a somewhat shifty look to his
+blue eyes.  He} T FAZUUL description
+
+
+FAZ1707 {[0;1;32m is a dapper, well-groomed fellow, with a somewhat shifty look to his
+grey eyes.  He} T FAZUUL description
+
+
+FAZ1708 {[0;1;32m is a dapper, well-groomed fellow, with a somewhat shifty look to his
+brown eyes.  He} T FAZUUL description
+
+
+FAZ1709 {[0;1;32m is a dapper, well-groomed fellow, with a somewhat shifty look to his
+green eyes.  He} T FAZUUL description
+
+
+FAZ1710 {[0;1;32m is a philosophical-looking sort, with greying eyebrows.  He is wearing
+a green sports jacket with patches on the elbows.  He} T FAZUUL description
+
+
+FAZ1711 {[0;1;32m is a philosophical-looking sort, with greying eyebrows.  He is wearing
+a grey sports jacket with patches on the elbows.  He} T FAZUUL description
+
+
+FAZ1712 {[0;1;32m is a philosophical-looking sort, with greying eyebrows.  He is wearing
+a tan sports jacket with patches on the elbows.  He} T FAZUUL description
+
+
+FAZ1713 {[0;1;32m is a dashing young fellow in a corporal's uniform.  He} T FAZUUL description
+
+
+FAZ1714 {[0;1;32m is a dashing young fellow in a lieutenant's uniform.  He has a long,
+bushy handlebar mustache.  He} T FAZUUL description
+
+
+FAZ1715 {[0;1;32m is a dashing young fellow in a captain's uniform.  He} T FAZUUL description
+
+
+FAZ1716 {[0;1;32m is an odd-looking sort, about five feet tall, with bushy purple eyebrows
+jutting out of a round, domed forehead.  His left nostril seems to be painted
+blue.  He} T FAZUUL description
+
+
+FAZ1717 {[0;1;32m is an odd-looking sort, about five foot seven, with bushy green eyebrows
+jutting out of a round, domed forehead.  His right nostril seems to be painted
+blue.  He} T FAZUUL description
+
+
+FAZ1718 {[0;1;32m is an odd-looking sort, about six feet tall, with bushy orange eyebrows
+jutting out of a round, domed forehead.  His left nostril seems to be painted
+silver.  He} T FAZUUL description
+
+
+FAZ1719 {[0;1;32m is an odd-looking sort, about five foot four, with bushy blue eyebrows
+jutting out of a round, domed forehead.  His right nostril seems to be dilated
+and is dripping heavily.  He} T FAZUUL description
+
+
+FAZ1720 {[0;1;32m is a flamboyantly dressed fellow, with short, squat antennae extending
+upwards from his hairline about three inches.  He} T FAZUUL description
+
+
+FAZ1721 {[0;1;32m is a flamboyantly dressed fellow, with long, sleek antennae extending
+upwards from his hairline about a foot.  He} T FAZUUL description
+
+
+FAZ1722 {[0;1;32m is a harmless-looking type, a little heavy in the shoulders, with pale
+lavender skin.  He} T FAZUUL description
+
+
+FAZ1723 {[0;1;32m is a harmless-looking type, a little heavy in the shoulders, with bright
+red skin.  He} T FAZUUL description
+
+
+FAZ1724 {[0;1;32m is a harmless-looking type, a little heavy in the shoulders, with pale
+green skin.  He has an honest face.  He} T FAZUUL description
+
+
+FAZ1725 {[0;1;32m is a friendly-looking sort, with a perpetual half-smile on his face.  You
+get the feeling that he might need money.  He} T FAZUUL description
+
+
+FAZ1726 {[0;1;32m is the rugged, individualistic type.  He has four pet parrots: one on
+his head, one on each shoulder, and one perched on the toe of his left shoe.  He} T FAZUUL description
+
+
+FAZ1727 {[0;1;32m looks like the soldier-of-fortune type.  He has a black patch over his
+left eye, and has long, greasy black hair.  He} T FAZUUL description
+
+
+FAZ1728 {[0;1;32m looks like the soldier-of-fortune type.  He has a black patch over his
+right eye, and has long, greasy blond hair.  He} T FAZUUL description
+
+
+FAZ1729 {[0;1;32m looks like the soldier-of-fortune type.  He has a black patch over his
+left eye, and has short, greasy black hair.  He} T FAZUUL description
+
+
+FAZ1730 {[0;1;32m looks like the soldier-of-fortune type.  He has a black patch over his
+right eye, and has short, greasy blond hair.  He} T FAZUUL description
+
+
+FAZ1731 {[0;1;32m looks rather strange.  His teeth project out over his lower lip to a
+length of two or three inches, and have little tufts of reddish hair at the
+end.  Short jets of purple smoke shoot out of his ears from time to time.  He} T FAZUUL description
+
+
+FAZ1732 {[0;1;32m looks rather strange.  His teeth project out over his lower lip to a
+length of two or three inches, and have little tufts of bluish hair at the
+end.  Short jets of orange smoke shoot out of his ears from time to time.  He} T FAZUUL description
+
+
+FAZ1733 {[0;1;32m looks rather strange.  His teeth project out over his lower lip to a
+length of two or three inches, and have little tufts of gold hair at the
+end.  Short jets of what appears to be steam shoot out of his ears from time
+to time.  He} T FAZUUL description
+
+
+FAZ1734 {[0;1;32m is constantly smiling about in all directions as you watch.  His face
+seems to exhibit a nervous twitch that makes him appear to be winking at
+everyone around you, as though sharing some private joke.  He} T FAZUUL description
+
+
+FAZ1735 {[0;1;32m is about three feet tall, and has enormous feet, which at the moment
+are encased in equally enormous shiny black shoes.  You sense the faint smell
+of Dr. Scholl's emanating from his general direction.  He} T FAZUUL description
+
+
+FAZ1736 {[0;1;32m looks as though he has recently been to a costume party.  He is dressed
+as a prehistoric city-dweller, with a "three-piece suit", and a "tie" wrapped
+around his neck (this was a thin strip of cloth used, in prehistoric times, to
+symbolize a snake -- by wrapping it about his neck, the native demonstrated
+his complete triumph over the fear of boa constrictors and the like).  He} T FAZUUL description
+
+
+FAZ1737 {[0;1;32m is surrounded by a faintly glowing aura of leashed energy.  He is about
+seven feet tall, dark-haired, with what appears to be an old fencing scar on his
+left cheek.  He} T FAZUUL description
+
+
+FAZ1738 {[0;1;32m is surrounded by a faintly glowing aura of leashed energy.  He is about
+eight feet tall, dark-haired, with what appears to be the scar of an old
+bullet wound on his left cheek.  He} T FAZUUL description
+
+
+FAZ1739 {[0;1;32m is surrounded by a faintly glowing aura of leashed energy.  He is about
+six feet tall, light-haired, with what appears to be an old fishing scar on his
+right cheek.  He} T FAZUUL description
+
+
+FAZ1740 {[0;1;32m looks like the impatient sort.  His sweaty face is a dark shade of
+purple, and he seems to be tapping one foot on the ground so fast that you
+can barely see it.  He} T FAZUUL description
+
+
+FAZ1741 {[0;1;32m is a sharp-nosed, inquisitive-looking type, about five and a half feet
+tall, with dark, oily hair.  You cannot help wondering if he would like to
+give you some crackers.  He} T FAZUUL description
+
+
+FAZ1742 {[0;1;32m is a sharp-nosed, inquisitive-looking type, about five and a half feet
+tall, with dark, oily hair.  You cannot help wondering if he has a mother-in-law
+named Ozelko.  He} T FAZUUL description
+
+
+FAZ1743 {[0;1;32m is a sharp-nosed, inquisitive-looking type, about five and a half feet
+tall, with dark, oily hair.  You cannot help wondering if he has a nebbish
+hidden away somewhere.  He} T FAZUUL description
+
+
+FAZ1744 {[0;1;32m is a sharp-nosed, inquisitive-looking type, about five and a half feet
+tall, with dark, oily hair.  You cannot help wondering if he is working on
+a novel in his spare time.  He} T FAZUUL description
+
+
+FAZ1745 {[0;1;32m has become a small bread-basket, with a shelf-life of several weeks.
+A small sign over his head blinks repeatedly: "Fish No More".  He} T FAZUUL description
+
+
+FAZ1746 {[0;1;32m is apparently undergoing a metamorphosis from the form of a
+hippopotamus to that of a buttercup.  A soft wheezing sound emits from his left
+armpit/leaf-structure, a portion of his anatomy you decide you would just as
+soon not investigate further.  He} T FAZUUL description
+
+
+FAZ1747 {[0;1;32m is wearing a name-badge identifying himself as an Inspector of
+Unspecified Proportionalities, but you notice that the green headdress normally
+accorded such functionaries is conspicuously missing.  He} T FAZUUL description
+
+
+FAZ1748 {[0;1;32m has become almost uniformly orange, but you notice a small mole just
+beneath his left ear that seems to be blinking on and off in a shade of
+pale yellow.  He} T FAZUUL description
+
+
+FAZ1749 {[0;1;32m is surrounded by a cloud of small, gnat-like creatures, all singing
+in unison, "When the Saints Come Marching In".  He seems to be enjoying
+the music, as far as you can tell.  He} T FAZUUL description
+
+
+FAZ1750 {[0;1;32m has the look of a desperate fugitive about him, but you feel certain
+that his mother loves him.  Looking closely, you notice a small tear forming
+in the corner of his right eye.  He} T FAZUUL description
+
+
+FAZ1751 {[0;1;32m is apparently masquerading as the Duke of York, but the raccoon
+nesting in his left ear is a dead giveaway.  He is trying to combat the smell
+of the dead raccoon with Old Spice, but to no avail.  He} T FAZUUL description
+
+
+FAZ1752 {[0;1;32m has a serious case of Uncorgling's Disease, which makes him seem much
+less unpopular than he actually is.  A spare set of kelp bladders is dangling
+on a chain from his belt.  He} T FAZUUL description
+
+
+FAZ1753 {[0;1;32m has the look of a man plotting the overthrow of the galaxy.
+Unfortunately, he cannot seem to escape the holographic image of the small
+backyard rotisserie that follows him around, sometimes in front, sometimes
+behind.  He} T FAZUUL description
+
+
+FAZ1754 {[0;1;32m has a distracted look about him, as though torn between a desire to
+discover new life, new civilizations, and a desire to eat some fresh
+marmalade.  Why he supposes these are mutually exclusive, you cannot tell.  He} T FAZUUL description
+
+
+FAZ1755 {[0;1;32m appears to be wearing a special projector that makes his nose seem
+several times its actual size.  However, the small radar dome on his head
+forces you to conclude that he works for the military.  He} T FAZUUL description
+
+
+FAZ1756 {[0;1;32m is appropriately attired for the occasion in a high-necked, stiff
+white collar and blue velvet bellbottoms.  You seem to recall having seen
+him before on one of those tri-D newscasts.  He} T FAZUUL description
+
+
+FAZ1757 {[0;1;32m has evidently gotten fed up with feeding the ducks all the time,
+since he has no stale bread anywhere on his person.  However, looking closely,
+you notice the telltale stains of yeast contamination on the thumb and
+forefinger of his left hand.  He} T FAZUUL description
+
+
+FAZ1758 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1759 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1760 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1761 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1762 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1763 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1764 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1765 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1766 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1767 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1768 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1769 {[0;1;32m is an average-looking fellow of medium build.  He} T FAZUUL description
+
+
+FAZ1801 {[0;1;32m...Please, this is a family game -- no obscenity when talking to other players.
+You can cuss at your own terminal all you like, but not over the network.
+} T FAZUUL description
+
+
+FAZ1817 {[0;1;32m...If you would like to restart your session, type "restart now".  This will
+cause you to dematerialize and reappear at the city's spaceport again, as
+though you were just starting the game for the first time.  Don't forget, this
+means you will lose any objects you happen to be carrying at the time.
+} T FAZUUL description
+
+
+FAZ1818 {[0;1;32m...Your vision is suddenly obscured by a scintillating cloud of white mist!
+You feel a whirling, swirling motion, as though you are caught in a subspace
+vortex, and all of the objects you are carrying are ripped from your grasp!
+Then the motion slowly subsides and your vision clears...
+} T FAZUUL description
+
+
+FAZ1824 {[0;1;32m...It's up to you to work out the details of the trade with the other player
+(type "help trading" for more information).
+} T FAZUUL description
+
+
+FAZ1825 {[0;1;32m...It doesn't seem to want to open up any further than it already is.
+} T FAZUUL description
+
+
+FAZ1826 {[0;1;32m...It doesn't seem to want to close up any further than it already is.
+} T FAZUUL description
+
+
+FAZ1827 {[0;1;32m...You can't, you don't have a shovel!
+} T FAZUUL description
+
+
+FAZ1828 {[0;1;32m...Ahh, but HOW do you use it, that's the question!
+} T FAZUUL description
+
+
+FAZ1829 {[0;1;32m...Ooh, it squirmed and gasped as you did that!
+} T FAZUUL description
+
+
+FAZ1830 {[0;1;32m...You can't, you aren't wearing your jump suit!
+} T FAZUUL description
+
+
+FAZ1831 {[0;1;32m...You don't seem to be able to get a good grip.
+} T FAZUUL description
+
+
+FAZ1832 {[0;1;32m...All right you wisacre, let's stop fooling around and play the game now, huh?
+} T FAZUUL description
+
+
+FAZ1833 {[0;1;32m...Considering that, for the purpose of this game, you and I are one and the
+same, that would be quite an accomplishment!
+} T FAZUUL description
+
+
+FAZ1834 {[0;1;32m...Yeah, let's swing!  Doe-si-doe now, two-by-two...
+} T FAZUUL description
+
+
+FAZ1835 {[0;1;32m...You can't, you don't seem to have a pen.
+} T FAZUUL description
+
+
+FAZ1836 {[0;1;32m...You don't seem to have a lighter.
+} T FAZUUL description
+
+
+FAZ1837 {[0;1;32m...Aaaaaah
+   aaaaaaaaaaaaaah
+   aaaaaaaaaaaaaaaaaaaah
+...It doesn't seem to work.
+} T FAZUUL description
+
+
+OOGFRE {[0;1;32m***
+Suddenly, the oolgorboid begins to writhe and undulate!  Then it emits an
+ear-piercing screech and lies still again.
+} T FAZUUL description
+
